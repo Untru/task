@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee664b00-6a72-4ed6-8949-fae601cfdab7">
+  <producedTypes>
+    <selectionType typeId="4fa1a32f-d386-46ac-9dc6-2be8df77a445" valueTypeId="db9324bb-b482-409f-822e-d5b97ed57bb3"/>
+    <listType typeId="f193c08e-141c-4b25-9b33-7a7be20c1519" valueTypeId="cf130442-6a2c-46dd-ba1c-c531c10d479d"/>
+    <managerType typeId="b8655f49-907d-4745-9ce7-1492cebf8e0e" valueTypeId="1bb1e436-46bf-471b-a576-fcddfa11e379"/>
+    <recordSetType typeId="70a342da-75e7-4697-a439-a15801bac375" valueTypeId="7dda0d85-97ff-473b-adfa-f89ece7d5040"/>
+    <recordKeyType typeId="a2b47e20-9fcd-48f8-853c-b439a3555d2d" valueTypeId="06e27c2b-d106-4ffb-a349-442687f5a87c"/>
+    <recordType typeId="86d14cb3-f1ce-480e-a552-0113fcbda3c1" valueTypeId="089573a9-71d1-4f81-befc-6b831298eead"/>
+    <recordManagerType typeId="49a6123f-83b3-45dc-9a93-ec7afb0bcec5" valueTypeId="c5e3e12c-d4f7-4bcb-8b62-9789dc57286d"/>
+  </producedTypes>
+  <name>ТелеграмЗадачиПодтверждения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Телеграм задачи подтверждения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="72d907aa-5c73-4b3a-84ee-95f95dbf62b4">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыЗадачПодтвержденияТелеграм</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ba76d521-d825-41ae-b7da-ab615cc973b1">
+    <name>ФизЛицоПодтверждения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физ лицо подтверждения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d764fd4a-1195-4393-be2c-fa000c7418ed">
+    <name>ИДПользователяПодтверждения</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИДПользователя подтверждения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="619f9a33-1db0-466c-b216-d4d41229eb3e">
+    <name>ОбъектПодтверждения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект подтверждения</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ОбращениеВПоддержку</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

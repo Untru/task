@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="213c073e-0791-4f3a-9f39-6169b43dfbd2">
+  <producedTypes>
+    <managerType typeId="725b62e8-3a10-4090-88f4-2759308a74ea" valueTypeId="a50994cd-2420-4ec2-98d8-43b01fef2020"/>
+    <valueManagerType typeId="b3bf22c2-a349-406f-b9b3-f224295e5da2" valueTypeId="d3473353-e6cb-4bd3-b14b-1e989f2345b9"/>
+    <valueKeyType typeId="f089f85d-8515-5536-a56e-6689354788bf" valueTypeId="9cb1c088-17f2-55a0-ad1f-4d19ad48c861"/>
+  </producedTypes>
+  <name>ЗагружатьОбращенияПоEmail</name>
+  <synonym>
+    <key>ru</key>
+    <value>Автозагрузка обращения по Email</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

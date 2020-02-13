@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bf7777a0-96a9-4993-b027-e60be95532e7">
+  <producedTypes>
+    <objectType typeId="81ef4f98-5d13-4976-99bd-eea6a652406c" valueTypeId="20a6c8fd-7174-4bff-a132-c500a3d5db1e"/>
+    <refType typeId="297852b1-fc02-401e-9824-1c56d7765c0b" valueTypeId="8435a9ce-732c-4da8-8d62-9dd459ed4523"/>
+    <selectionType typeId="3542a624-67e4-4800-a103-7ea25c223ae4" valueTypeId="d4450283-df24-400c-b211-0e6ad4be426e"/>
+    <listType typeId="59807251-ef0d-43bc-a81b-d4cf6e13b9a2" valueTypeId="8d67b7cc-7d08-4653-892a-49a24cdf472e"/>
+    <managerType typeId="fbdd0810-3691-4ce0-8be1-6df591aec9b2" valueTypeId="a4481a7e-d283-48f8-b69b-edb56041c2ea"/>
+  </producedTypes>
+  <name>ФиксацияИдейИПредложений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Фиксация идей и предложений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ФиксацияИдейИПредложений.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ФиксацияИдейИПредложений.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="c2c93e90-07e8-4988-9f48-86628d18e10a">
+    <name>Идея</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идея</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c3c9571f-8b70-47b4-b010-12136611bc74">
+    <name>Выполнена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнена</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

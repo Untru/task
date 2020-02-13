@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f4a9c1f5-696e-4884-9120-556b3a23f666">
+  <producedTypes>
+    <selectionType typeId="aa5f88e1-bb44-4361-b8c9-e0bfa9e0a163" valueTypeId="94cb03a2-d6ec-436e-b45b-629039607bc6"/>
+    <listType typeId="c4d9ece3-a77d-4c26-87f5-68b7817bef80" valueTypeId="6d2860c0-707c-4640-a731-57664f86d9c4"/>
+    <managerType typeId="ce4cd748-4b87-45d0-ae1c-9a885a7d8463" valueTypeId="8878aae2-2124-4768-8365-afbdff1c5c03"/>
+    <recordSetType typeId="1a89b6ad-ca6e-46ef-8e34-c31ea0113467" valueTypeId="cfeeafe3-d338-4a7c-beaa-45d6e93986d6"/>
+    <recordKeyType typeId="4b7ab95f-60eb-4352-b6de-4987e2fb0d82" valueTypeId="61e89f18-a1e1-48d6-9300-ccc96f582cfb"/>
+    <recordType typeId="729e0291-ba59-4882-a6c2-74ae3ded2ea8" valueTypeId="05e68ebb-e297-4289-b161-5bc3a36392d1"/>
+    <recordManagerType typeId="5852a90c-be81-469f-9e13-e14d36e98bea" valueTypeId="89fb0322-e1a0-4a48-adbc-4f23457ed036"/>
+  </producedTypes>
+  <name>ФактОплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Факт оплаты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="74af0c33-e913-4026-ad82-9c6760c019fc">
+    <name>Оплачено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплачено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="91d58a6b-8977-420f-98c1-b21e948491e3">
+    <name>ОплаченоПрограммисту</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплачено программисту</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="de585b31-a674-40ed-a7d9-c974481d9142">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ОбращениеВПоддержку</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

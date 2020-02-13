@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="62a03382-fc08-4f26-afdf-5ca150cb865f">
+  <producedTypes>
+    <refType typeId="34f23592-3f2a-4ef5-b855-733fb181f70c" valueTypeId="390510d3-d897-477e-8aa3-68fa46fd1405"/>
+    <listType typeId="2f634894-6035-403c-9ce5-c07cd3e22cee" valueTypeId="3b939604-6925-41b6-8e03-7de833ce9748"/>
+    <managerType typeId="0f80103e-925b-413b-bd97-233a3d76bac6" valueTypeId="fcde8ca5-343c-44d9-a3ed-ed8e6291b6d2"/>
+  </producedTypes>
+  <name>СпособыSMTPАутентификации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы SMTP аутентификации</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="422effe5-da81-48d8-80e4-48c6d8e210f6">
+    <name>CramMD5</name>
+    <synonym>
+      <key>ru</key>
+      <value>Cram MD5</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a6ff4c6f-a539-4913-8330-e7a2b3403936">
+    <name>Login</name>
+    <synonym>
+      <key>ru</key>
+      <value>Login</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a79332be-836f-41e2-bcf8-055ab9a73afa">
+    <name>Plain</name>
+    <synonym>
+      <key>ru</key>
+      <value>Plain</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dafc90d3-393e-4e58-a2d7-dc9e786a7046">
+    <name>БезАутентификации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Без аутентификации</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ff479177-9eed-4c84-9080-387e9df1a1ac">
+    <name>ПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>По умолчанию</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b92950c2-a977-42d3-b472-5637390a9972">
+  <producedTypes>
+    <objectType typeId="0929063e-94f6-4874-bd6a-cfcc6cb3288e" valueTypeId="46d2878f-1825-482d-a611-dc1977bcbeba"/>
+    <managerType typeId="f276f312-73a6-4704-922b-3fbd35d1890f" valueTypeId="1992e728-418a-494a-9d06-27b9446d94b9"/>
+  </producedTypes>
+  <name>Gant1C</name>
+  <synonym>
+    <key>ru</key>
+    <value>Gant 1C</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.Gant1C.Form.ФормаУправляемая</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="a4f24f47-35fa-46dc-8e38-b8d4ad29346c">
+    <name>ИспользоватьАвтосохранение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать автосохранение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0865cac8-c478-41bc-8227-a1f571901b08">
+    <name>ПериодАвтосохранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период автосохранения (в минутах)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b4c67bae-f0b1-4142-81b8-c6bbf70e97ec">
+    <name>ПапкаСЗадачами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Папка с задачами</value>
+    </synonym>
+    <type>
+      <types>AnyRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a781721e-2786-4cf8-9632-4eb881d6bf9f">
+    <name>ИсполнительПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель по умолчанию (для новых задач)</value>
+    </synonym>
+    <type>
+      <types>CatalogRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="28aafbc1-1a49-4277-875c-7f62f0f34a59">
+    <name>СубботаРабочий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Суббота рабочий</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fc09dfcd-dfb0-4458-ac52-662cad56893c">
+    <name>ВоскресеньеРабочий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Воскресенье рабочий</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d1f411d2-dd90-4f13-90bf-d40aef01195e">
+    <name>КоличествоРабочихЧасовВДне</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество рабочих часов в дне</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e808ef9c-d078-4b95-a978-419a0ea469df">
+    <name>ОсновнойЦветФонаЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной цвет фона задач</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3da01109-2985-4107-bdf9-856f60a4a665">
+    <name>ОсновнойЦветТекстаЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной цвет текста задач</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2d865100-e7f2-4b32-9c3f-03f875845da1">
+    <name>ОсновнойЦветФонаСуммирующихЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной цвет фона суммирующих задач</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b0003c9a-db04-4fee-8a22-2d7342fbd785">
+    <name>ОсновнойЦветТекстаСуммирующихЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной цвет текста суммирующих задач</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ad3a1d30-1234-4764-903c-53b460ca856a">
+    <name>ЦветФонаЗавершенныхЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет фона завершенных задач</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="705976fb-70ac-405a-b962-073e4d250daf">
+    <name>ЦветТекстаЗавершенныхЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет текста завершенных задач</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5f1985e5-1183-4f51-87ce-1e1159403fa9">
+    <name>ЦветФонаВыполняющихсяЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет фона выполняющихся задач</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ea3252d7-881a-479b-be17-a8a21e6379fa">
+    <name>ЦветТекстаВыполняющихсяЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет текста выполняющихся задач</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b8612ed6-0519-46a5-affb-48a3fac3f1bd">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>BusinessProcessRef</types>
+      <types>DocumentRef</types>
+      <types>CatalogRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f4898a1e-0a9a-4ea1-8f61-a1d1ba721101">
+    <name>ЦветаБылиСохранены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвета были сохранены</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6e4e0bbe-a77b-41ec-8870-8ae4f254f16f">
+    <name>НачалоРабочегоДня</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало рабочего дня</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="1d81d62f-647d-4d3c-8f06-b7c53dd563a7">
+    <name>ФормаУправляемая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="caab9ec7-342b-45a8-aa3e-657e46b0f775">
+    <name>ФормаЗадачиУправляемая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма задачи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ea26bad1-dc01-430a-a94d-12998df3e50b">
+    <name>НастройкаВидимостиКолонокУправляемая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка видимости колонок</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="439ff457-0aa5-4ab9-aaca-381085af23d7">
+    <name>ОПрограммеУправляема</name>
+    <synonym>
+      <key>ru</key>
+      <value>О программе</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5e8486de-fe1b-46cd-8f2b-f4941a395d59">
+    <name>ФормаНастройкиПроектаУправляемая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настройки проекта управляемая</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="4efcc508-928f-432a-83eb-851a38ef7e7e">
+    <name>пмГант_Гант</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гант</value>
+    </synonym>
+  </templates>
+  <templates uuid="962369e3-45db-4bf0-878e-ad0431f802ed">
+    <name>СхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

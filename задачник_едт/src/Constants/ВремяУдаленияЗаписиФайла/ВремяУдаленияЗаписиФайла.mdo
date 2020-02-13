@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3512e38-1a41-400b-88ef-18c50a4a766a">
+  <producedTypes>
+    <managerType typeId="a1b0b7e3-55bf-4181-b5a7-eeb7e909f281" valueTypeId="e2c083a1-d840-4254-ada0-acd4650a27c4"/>
+    <valueManagerType typeId="a95d4929-99f8-4aa4-aae1-d4aa9047a598" valueTypeId="79cc2e50-7832-42e2-ba7d-6f7ef2a04846"/>
+    <valueKeyType typeId="d95d4825-1266-5bf3-bb77-8c37226b673b" valueTypeId="3efb7e26-8966-50a7-8df9-da306a5ff6b9"/>
+  </producedTypes>
+  <name>ВремяУдаленияЗаписиФайла</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время удаления присоединенного файла (мин.)</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

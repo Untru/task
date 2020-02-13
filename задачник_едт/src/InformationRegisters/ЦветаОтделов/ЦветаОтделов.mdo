@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f4e06b13-6c93-4256-81ed-cd17e526235c">
+  <producedTypes>
+    <selectionType typeId="d586c045-62df-43f2-9bba-13438dc6b582" valueTypeId="b1cc5775-8474-444d-9c36-d92117df8ab4"/>
+    <listType typeId="a8eda31e-3f69-4cde-ab97-c6a106a073df" valueTypeId="7767ccb2-a4d4-4341-bdad-9faf671fb66e"/>
+    <managerType typeId="158ba0c4-d84c-4145-8685-17d84ded2701" valueTypeId="042a5362-6e70-4212-9824-7cb337bf222f"/>
+    <recordSetType typeId="541c3fb3-839f-46cf-b892-da3e24cc6cf2" valueTypeId="4113db89-49d0-482d-9208-dab3fc66eaed"/>
+    <recordKeyType typeId="402b7386-9a7d-4cdf-8462-194dcb1a2014" valueTypeId="a77ade43-f9cf-4743-9280-2bccbc5985b5"/>
+    <recordType typeId="e377294b-4105-40fc-8ca0-e7ad9a3b09ce" valueTypeId="6bc6a99e-eb26-4d85-b211-6ce6fe62ed8e"/>
+    <recordManagerType typeId="ba56f5c2-9964-438f-ab44-cb4fea95e694" valueTypeId="d0605bd0-fe29-4717-9044-02c5630b1a80"/>
+  </producedTypes>
+  <name>ЦветаОтделов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цвета отделов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="e8ee3958-5b9e-4fab-95b7-c25230973184">
+    <name>Отдел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отдел</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Отделы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5f0233be-1578-4bdf-8da6-3cf3aa969c6a">
+    <name>Цвет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

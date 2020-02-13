@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="589e3b43-ec70-470c-99ce-d6706a16af70">
+  <producedTypes>
+    <refType typeId="af8652a7-8703-45c2-a88f-df52b4d4d34e" valueTypeId="9be5e7b0-37d3-4c93-b225-5ef70192eda8"/>
+    <listType typeId="129dc036-a84a-48bf-85e5-cfc436abee58" valueTypeId="d89a3d5e-c4ec-40b5-ad8a-b507aeab508d"/>
+    <managerType typeId="515a749f-b194-4902-891f-c97c07eb24c2" valueTypeId="c3fcb72e-0188-4780-938e-caec9bf87b2c"/>
+  </producedTypes>
+  <name>ВидыОперацийРасчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды операций расчетов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="7691b31d-5715-44dd-b97d-da1e5fa65aac">
+    <name>ОплатаИсполнителю</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплата исполнителю</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2d293f5c-c35b-46ab-92ea-ad38ecf17443">
+    <name>ОплатаЗаказчиком</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплата заказчиком</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

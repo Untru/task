@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="de755146-c0f1-4a1b-9689-386f65c2d25d">
+  <producedTypes>
+    <selectionType typeId="47ae4427-83c6-45ef-8539-7468d7fd94d0" valueTypeId="5941f730-9195-40f9-bd1f-f240a64cc36e"/>
+    <listType typeId="c8c97d5c-b769-4a1e-8965-7746c0852471" valueTypeId="037a5a34-957f-4e63-892a-df9fb335a20b"/>
+    <managerType typeId="aab1d8da-2264-4758-a83e-aa9148261bd0" valueTypeId="61647295-3e6e-4d8a-ba81-3567758af444"/>
+    <recordSetType typeId="ff986eb0-24db-41ee-8ab1-e8be0faa54f3" valueTypeId="9bf91b14-dfb3-4a5c-86f9-60e77b9feb17"/>
+    <recordKeyType typeId="4fce4909-dc45-42d9-9b9e-3de84fb17e52" valueTypeId="cbe915eb-089a-4e10-83c6-71afd425535e"/>
+    <recordType typeId="48fe7857-28a7-495d-8e2a-1fe728a00412" valueTypeId="e7a17de6-cdaf-4b61-84e9-3a7ef6671744"/>
+    <recordManagerType typeId="9752b73f-90ec-4ad6-95e6-5b62c09253d0" valueTypeId="daf55c27-88bf-42b5-9418-a0c5ce4db4f5"/>
+  </producedTypes>
+  <name>ТарифыОтделов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тарифы отделов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="692b45d9-da03-401f-96c4-917748cb16b2">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="bedf4909-d40d-43cb-88b8-190b387165a3">
+    <name>Отдел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отдел</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Отделы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="973e7246-22dc-4805-93e4-b0177e272ce4">
+    <name>ВидВажности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид важности</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидВажности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

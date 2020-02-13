@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0a91d5f-bc6b-4582-98e8-594305d19aaf">
+  <producedTypes>
+    <managerType typeId="a76422fe-4fd0-4101-80c7-d7bfa0980338" valueTypeId="d1e61624-6436-4370-9009-243b17424373"/>
+    <valueManagerType typeId="51ddfed2-cc03-4f6e-bc8e-c313e7dbf429" valueTypeId="b9074c3a-8f82-41f6-a535-d3d34854e60e"/>
+    <valueKeyType typeId="81e086a9-73fe-5abc-b211-90212099c40b" valueTypeId="afefc79b-27de-530d-9c5b-e385933abfed"/>
+  </producedTypes>
+  <name>ЧасОкончанияРабочегоДня</name>
+  <synonym>
+    <key>ru</key>
+    <value>Час окончания рабочего дня</value>
+  </synonym>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Time</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <format>
+    <key>ru</key>
+    <value>ДФ=HH</value>
+  </format>
+  <editFormat>
+    <key>ru</key>
+    <value>ДФ=HH</value>
+  </editFormat>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

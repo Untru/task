@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02f0a5a0-c723-42d4-84e5-fa6baf0f3555">
+  <producedTypes>
+    <objectType typeId="0ee76247-dd38-4256-bd10-336001ae7a12" valueTypeId="3760a26c-779e-46d4-bc6b-079c5d65f35f"/>
+    <refType typeId="2c2dfd96-3d8c-4420-b46c-e87260ddb55a" valueTypeId="82e88b0b-9f4e-4b2c-a1b1-20a48d6e9770"/>
+    <selectionType typeId="530bd269-61c0-4a4e-8f20-6c717aaf63c4" valueTypeId="855837ca-3089-46de-a049-fd3ad76bc63f"/>
+    <listType typeId="dedf99e5-ffb3-4cb6-ac97-9d6fc5895101" valueTypeId="c3307132-83f7-40eb-92fa-d9394a2a1026"/>
+    <managerType typeId="bc05de43-1bda-485f-b7c5-338f27cc4da2" valueTypeId="9a6b2b36-6651-4d21-8117-306895a8bc2c"/>
+  </producedTypes>
+  <name>РасчетыПоРаботам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчеты по работам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.РасчетыПоРаботам.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.РасчетыПоРаботам.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.ЗадолженостьКлиентов</registerRecords>
+  <registerRecords>AccumulationRegister.РасчетСИсполнителями</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="517d5a5a-850f-444c-8ef9-6ae7e80b9ef3">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыОперацийРасчетов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="997d3ae6-42aa-4088-9f34-20c5d5e4bd53">
+    <name>Отделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Отделы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f1959517-cb95-401a-8c6c-6d004277f91b">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f9a96790-b8cf-40e0-baca-aa4c974b1904">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="de5a369d-4948-4d5a-87c5-686dcac2279e">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="115a3626-f76b-4ca6-b018-f7910109bb63">
+    <producedTypes>
+      <objectType typeId="7174b137-cf6c-4904-b1d6-bc9c8b3fc857" valueTypeId="3294d3a3-1840-4ed5-9ae4-b7741dbbc8aa"/>
+      <rowType typeId="74b3d913-b844-4b98-8167-6ede619895c2" valueTypeId="20b1129b-2ba6-439c-8f99-a8b37877f422"/>
+    </producedTypes>
+    <name>Расшифровка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка</value>
+    </synonym>
+    <attributes uuid="bd7c6f3f-610f-4e85-b113-7d349d184e80">
+      <name>Задача</name>
+      <synonym>
+        <key>ru</key>
+        <value>Задача</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ОбращениеВПоддержку</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="10abda8b-acc5-42a3-9089-beccae17d951">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="cc22f428-8ee3-4a5b-8309-950fb8551346">
+    <name>ЛУРВСтандартнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЛУРВ (Стандартная форма)</value>
+    </synonym>
+  </templates>
+  <commands uuid="d4ec03da-3fb2-4791-8fee-1fbc59a517f6">
+    <name>ЛистУчетаРабочегоВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лист учета рабочего времени</value>
+    </synonym>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType>
+      <types>DocumentRef.РасчетыПоРаботам</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Document>
