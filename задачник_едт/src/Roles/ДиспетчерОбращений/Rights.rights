@@ -17,11 +17,11 @@
 	<object>
 		<name>SessionParameter.ТекущийПользователь</name>
 		<right>
-			<name>Get</name>
+			<name>Set</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Set</name>
+			<name>Get</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -269,7 +269,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Отделы</name>
+		<name>Catalog.Контрагенты</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -280,7 +280,7 @@
 ИЗ
 	Справочник.НастройкаРЛС КАК НастройкаРЛС
 ГДЕ
-	НастройкаРЛС.Пользователь = &amp;ТекущийПользователь) КАК ВложенныйЗапрос, Справочник.Отделы КАК Отделы
+	НастройкаРЛС.Пользователь = &amp;ТекущийПользователь) КАК ВложенныйЗапрос, Справочник.Контрагенты КАК Отделы
 ГДЕ ВЫБОР
 			КОГДА ВложенныйЗапрос.ОграниченияПоОтделам
 				ТОГДА Отделы.Ссылка В
@@ -307,63 +307,63 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Отделы.StandardAttribute.PredefinedDataName</name>
+		<name>Catalog.Контрагенты.StandardAttribute.PredefinedDataName</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Отделы.StandardAttribute.Predefined</name>
+		<name>Catalog.Контрагенты.StandardAttribute.Predefined</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Отделы.StandardAttribute.Ref</name>
+		<name>Catalog.Контрагенты.StandardAttribute.Ref</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Отделы.StandardAttribute.DeletionMark</name>
+		<name>Catalog.Контрагенты.StandardAttribute.DeletionMark</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Отделы.StandardAttribute.IsFolder</name>
+		<name>Catalog.Контрагенты.StandardAttribute.IsFolder</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Отделы.StandardAttribute.Owner</name>
+		<name>Catalog.Контрагенты.StandardAttribute.Owner</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Отделы.StandardAttribute.Parent</name>
+		<name>Catalog.Контрагенты.StandardAttribute.Parent</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Отделы.StandardAttribute.Description</name>
+		<name>Catalog.Контрагенты.StandardAttribute.Description</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Отделы.StandardAttribute.Code</name>
+		<name>Catalog.Контрагенты.StandardAttribute.Code</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -374,37 +374,6 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Контрагенты</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Insert</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveInsert</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InputByString</name>
-			<value>true</value>
 		</right>
 	</object>
 	<object>

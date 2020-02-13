@@ -120,10 +120,6 @@
             <segments>Объект.ДатаНачала</segments>
           </paths>
         </dataPath>
-        <handlers>
-          <event>OnChange</event>
-          <name>ДатаНачалаПриИзменении</name>
-        </handlers>
         <extendedTooltip>
           <name>ДатаНачалаРасширеннаяПодсказка</name>
           <id>12</id>
@@ -176,10 +172,6 @@
             <segments>Объект.ДатаОкончания</segments>
           </paths>
         </dataPath>
-        <handlers>
-          <event>OnChange</event>
-          <name>ДатаОкончанияПриИзменении</name>
-        </handlers>
         <extendedTooltip>
           <name>ДатаОкончанияРасширеннаяПодсказка</name>
           <id>15</id>

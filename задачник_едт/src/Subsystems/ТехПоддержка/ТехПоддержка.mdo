@@ -12,7 +12,7 @@
   <content>InformationRegister.БазаЗнаний</content>
   <content>CommonCommand.ОткрытьРабочийСтолОбращенийТП</content>
   <content>Catalog.НастройкаРЛС</content>
-  <content>Catalog.Отделы</content>
+  <content>Catalog.Контрагенты</content>
   <content>Catalog.Проекты</content>
   <content>Catalog.ФиксацияИдейИПредложений</content>
   <content>DataProcessor.Планировщик</content>

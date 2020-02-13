@@ -50,7 +50,7 @@
       <value>Отделение</value>
     </synonym>
     <type>
-      <types>CatalogRef.Отделы</types>
+      <types>CatalogRef.Контрагенты</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

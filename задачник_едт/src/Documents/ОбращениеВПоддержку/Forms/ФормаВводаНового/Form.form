@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:FormGroup">
     <name>НомерДата</name>
     <id>31</id>
@@ -405,73 +405,6 @@
     <name>ОбращениеОтГруппа</name>
     <id>21</id>
     <items xsi:type="form:FormField">
-      <name>ВидОбращения</name>
-      <id>26</id>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>ВидОбращения</segments>
-        </paths>
-      </dataPath>
-      <handlers>
-        <event>OnChange</event>
-        <name>ВидОбращенияПриИзменении</name>
-      </handlers>
-      <extendedTooltip>
-        <name>ВидОбращенияРасширеннаяПодсказка</name>
-        <id>28</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <contextMenu>
-        <name>ВидОбращенияКонтекстноеМеню</name>
-        <id>27</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <autoFill>true</autoFill>
-      </contextMenu>
-      <type>RadioButtonField</type>
-      <editMode>Enter</editMode>
-      <showInHeader>true</showInHeader>
-      <headerHorizontalAlign>Left</headerHorizontalAlign>
-      <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
-        <choiceList>
-          <presentation>
-            <key>ru</key>
-            <value>Внутреннее обращение</value>
-          </presentation>
-          <value xsi:type="core:ReferenceValue">
-            <value>Enum.ВидОбращений.EnumValue.ВнутренниеОбращения</value>
-          </value>
-        </choiceList>
-        <choiceList>
-          <presentation>
-            <key>ru</key>
-            <value>Внешнее обращение</value>
-          </presentation>
-          <value xsi:type="core:ReferenceValue">
-            <value>Enum.ВидОбращений.EnumValue.ВнешниеОбращения</value>
-          </value>
-        </choiceList>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormField">
       <name>ОбращениеОт</name>
       <id>23</id>
       <visible>true</visible>
@@ -858,23 +791,6 @@
     </notDefaultUseAlwaysAttributes>
     <main>true</main>
     <savedData>true</savedData>
-  </attributes>
-  <attributes>
-    <name>ВидОбращения</name>
-    <title>
-      <key>ru</key>
-      <value>Вид обращения</value>
-    </title>
-    <id>2</id>
-    <valueType>
-      <types>EnumRef.ВидОбращений</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
   </attributes>
   <attributes>
     <name>АдресВрХранилища</name>

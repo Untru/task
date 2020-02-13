@@ -10,11 +10,10 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.ИнформацияСправочно</picture>
   </picture>
-  <content>Catalog.Отделы</content>
+  <content>Catalog.Контрагенты</content>
   <content>Catalog.Организации</content>
   <content>Catalog.ФизическиеЛица</content>
   <content>Catalog.Статусы</content>
-  <content>Catalog.Контрагенты</content>
   <content>Catalog.Категории</content>
   <content>InformationRegister.ЦветаОтделов</content>
   <content>Catalog.Проекты</content>

@@ -2090,10 +2090,6 @@
     <name>ПриОткрытии</name>
   </handlers>
   <handlers>
-    <event>BeforeClose</event>
-    <name>ПередЗакрытием</name>
-  </handlers>
-  <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
@@ -2151,10 +2147,6 @@
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:CatalogFormExtInfo">
-    <handlers>
-      <event>AfterWrite</event>
-      <name>ПослеЗаписи</name>
-    </handlers>
     <handlers>
       <event>BeforeWrite</event>
       <name>ПередЗаписью</name>

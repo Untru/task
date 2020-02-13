@@ -347,10 +347,9 @@
   <commonForms>CommonForm.ВопросОбУстановкеРасширенияРаботыСФайлами</commonForms>
   <commonForms>CommonForm.ПечатьДокументов</commonForms>
   <catalogs>Catalog.Категории</catalogs>
-  <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.НастройкиПользователей</catalogs>
   <catalogs>Catalog.Организации</catalogs>
-  <catalogs>Catalog.Отделы</catalogs>
+  <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Пользователи</catalogs>
   <catalogs>Catalog.Статусы</catalogs>
   <catalogs>Catalog.УчетныеЗаписиЭлектроннойПочты</catalogs>
