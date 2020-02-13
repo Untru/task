@@ -360,6 +360,7 @@
   <catalogs>Catalog.узСпринты</catalogs>
   <documents>Document.ОбращениеВПоддержку</documents>
   <documents>Document.РасчетыПоРаботам</documents>
+  <documents>Document.Проект</documents>
   <enums>Enum.ВариантыSMTPАутентификации</enums>
   <enums>Enum.ВидВажности</enums>
   <enums>Enum.ВидМестаРаботы</enums>

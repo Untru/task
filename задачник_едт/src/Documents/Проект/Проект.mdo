@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e142a53-4845-42bb-95f7-75d0c7332879">
+  <producedTypes>
+    <objectType typeId="b9e535cc-f5d4-4312-89f6-ee3b71fcbaf7" valueTypeId="4c80ae43-99ba-452f-bebe-40a58d952ebe"/>
+    <refType typeId="7efb54e3-5d67-453e-97dc-2a1f9c736bf8" valueTypeId="f09c6de1-ad9e-4c26-9a01-14bb444c1c85"/>
+    <selectionType typeId="0734bc89-1910-4cf8-b315-b4b469fd7b74" valueTypeId="7b3faf60-326c-4e06-ae61-95007b4c5aca"/>
+    <listType typeId="f3ce3d7a-ebcf-4a9d-bcfe-8995bb892013" valueTypeId="133f664a-b5ed-4047-be5d-40fad803e85d"/>
+    <managerType typeId="b82e376a-f513-4f17-a001-99b576fdc3bd" valueTypeId="1ad05513-ec52-450b-8ec1-570ee27d4499"/>
+  </producedTypes>
+  <name>Проект</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проект</value>
+  </synonym>
+  <comment>Проектные работы</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Проект.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Проект</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Проекты</value>
+  </listPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Агригирующий документ по проекту</value>
+  </explanation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="8b109157-6b3e-451f-b88d-e320c254a308">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="7d014a2a-3026-4eb1-b9d4-9490078b963f">
+    <producedTypes>
+      <objectType typeId="e193341e-0f9d-4ade-8d4a-92c38064ef91" valueTypeId="991bd024-f13b-44ca-9f98-1c00578f11c3"/>
+      <rowType typeId="2ad4f983-5370-4af1-ac4f-fac37500ef8c" valueTypeId="b42fa767-f50c-4913-b60c-1a682605c3ac"/>
+    </producedTypes>
+    <name>Этапы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этапы проекта</value>
+    </synonym>
+    <attributes uuid="165f85ce-63c4-48c1-a756-a56b6f13ca07">
+      <name>НаименованиеЭтапа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование этапа</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f3d09d04-cd8c-4fac-bff3-a76c4be49e40">
+      <name>ПлановаяСтоимость</name>
+      <synonym>
+        <key>ru</key>
+        <value>Плановая стоимость</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
