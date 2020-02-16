@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0a51bef2-d5ac-4aa1-b56d-05325d584308">
+  <producedTypes>
+    <managerType typeId="98143aad-7822-4d09-b5a0-20bfb9dfa105" valueTypeId="f2c953ad-5582-4f62-a89e-3ffa2a5eb2bf"/>
+    <valueManagerType typeId="a60d4b31-f8c1-4b33-9358-12c1850305f0" valueTypeId="687be49c-e515-4a4a-a66d-ffbdc9429731"/>
+    <valueKeyType typeId="863cb4e3-421d-446b-9b82-33e14229a097" valueTypeId="895b6720-0cfd-4aef-84b2-ba47579536da"/>
+  </producedTypes>
+  <name>Тест</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тест</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

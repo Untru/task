@@ -339,6 +339,7 @@
   <constants>Constant.ЧасНачалаРабочегоДня</constants>
   <constants>Constant.ЧасОкончанияРабочегоДня</constants>
   <constants>Constant.ОтправкаОбращенийУчетнаяЗаписьПочты</constants>
+  <constants>Constant.Тест</constants>
   <commonForms>CommonForm.ОбщиеНастройки</commonForms>
   <commonForms>CommonForm.ФормаДобавленияСтатуса</commonForms>
   <commonForms>CommonForm.ФормаДобавленияСообщения</commonForms>
