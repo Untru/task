@@ -596,6 +596,24 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="139bf438-3b20-4245-8a2f-fa6bb529d08c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d8dff2bb-a6ac-4d24-80a9-5e6ef31b7bd4">
+    <name>ФормаДокумента1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа1</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="70f10b68-a0aa-4cff-9511-194c4b212126">
     <producedTypes>
       <objectType typeId="ffb59e00-2a16-4d29-9bd4-bb6a3caf6168" valueTypeId="761a6b3c-9885-4996-b841-e903d0ca92eb"/>
