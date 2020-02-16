@@ -5538,10 +5538,6 @@
               <name>ПланировщикПроверкаПеретаскивания</name>
             </handlers>
             <handlers>
-              <event>OnCurrentRepresentationPeriodChange</event>
-              <name>ПланировщикПриСменеТекущегоПериодаОтображения</name>
-            </handlers>
-            <handlers>
               <event>OnEditEnd</event>
               <name>ПланировщикПриОкончанииРедактирования</name>
             </handlers>

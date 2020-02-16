@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a5cd4968-62ca-4b0f-8c06-8ae330149f26">
+  <producedTypes>
+    <objectType typeId="3cbda74b-680d-4dc2-a38d-a04ab599f332" valueTypeId="6160297a-76bf-4efc-8fe1-ea4450f022e9"/>
+    <refType typeId="bcc984eb-9bad-47d0-89ae-77a12a6981a2" valueTypeId="88095dd9-cc72-4afb-8d4b-37d7c017c022"/>
+    <selectionType typeId="3d30ce0e-61bb-4de5-8d9d-61093e4b8210" valueTypeId="2e6cee9b-781e-4f84-a9a4-c92c5af375d3"/>
+    <listType typeId="55aa6d83-315c-441a-9233-d6c67132fa16" valueTypeId="88de9f73-82d0-48c0-89b8-e90230fbc270"/>
+    <managerType typeId="d8311707-415a-4c2f-a0ce-eacbc320a60b" valueTypeId="5a7406c5-67ee-4d14-9fb8-d78e827c8ac8"/>
+  </producedTypes>
+  <name>ЭтапПроекта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Этап проекта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ЭтапПроекта.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Этапы проектов</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="57458cbc-d6ca-4c8a-962e-31f4c28879e6">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Проект</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9aa4cf68-a153-4f92-b19f-5fd794743e68">
+    <name>НаименованиеЭтапа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование этапа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1125d035-76f3-40ce-87c5-d0b071b87b3e">
+    <name>ПлановаяСтоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плановая стоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

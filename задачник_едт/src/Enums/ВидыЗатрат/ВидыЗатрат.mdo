@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="84c7ca80-ab2e-4bf2-a0d2-b03029c0f19e">
+  <producedTypes>
+    <refType typeId="22074c12-4d49-454f-be46-154aa9832bd1" valueTypeId="997d9a05-5776-4582-8064-75b9229234f1"/>
+    <listType typeId="41c82d7a-cff3-4197-bb1b-bbc2283a9576" valueTypeId="22a077c6-1b46-4e5d-8d08-736dabefd00b"/>
+    <managerType typeId="d518d1ec-baf3-4ff3-90cb-f11f308ace91" valueTypeId="07e146aa-3293-4404-965f-e9e75fc5bc99"/>
+  </producedTypes>
+  <name>ВидыЗатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды затрат</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="12257c96-5dc4-4cd8-96d7-2b20b727f13a">
+    <name>ОплаченоПавлом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплачено Павлом</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4081a221-09a9-4693-973f-626c13487dba">
+    <name>ОплаченоРоманом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплачено Романом</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

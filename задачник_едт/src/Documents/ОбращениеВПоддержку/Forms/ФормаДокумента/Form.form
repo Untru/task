@@ -420,17 +420,15 @@
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
-          <name>Проект</name>
+          <name>Этап</name>
           <id>333</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Объект.Проект</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.ЭтапПроекта</segments>
           </dataPath>
           <extendedTooltip>
             <name>ПроектРасширеннаяПодсказка</name>

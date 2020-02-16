@@ -36,6 +36,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Проект.Form.ФормаДокумента</defaultObjectForm>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="8b109157-6b3e-451f-b88d-e320c254a308">
@@ -50,46 +51,44 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <tabularSections uuid="7d014a2a-3026-4eb1-b9d4-9490078b963f">
-    <producedTypes>
-      <objectType typeId="e193341e-0f9d-4ade-8d4a-92c38064ef91" valueTypeId="991bd024-f13b-44ca-9f98-1c00578f11c3"/>
-      <rowType typeId="2ad4f983-5370-4af1-ac4f-fac37500ef8c" valueTypeId="b42fa767-f50c-4913-b60c-1a682605c3ac"/>
-    </producedTypes>
-    <name>Этапы</name>
+  <attributes uuid="94229b4b-4268-44e7-8c8b-1d0d594550a6">
+    <name>НаименованиеПроекта</name>
     <synonym>
       <key>ru</key>
-      <value>Этапы проекта</value>
+      <value>Наименование</value>
     </synonym>
-    <attributes uuid="165f85ce-63c4-48c1-a756-a56b6f13ca07">
-      <name>НаименованиеЭтапа</name>
-      <synonym>
-        <key>ru</key>
-        <value>Наименование этапа</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>100</length>
-        </stringQualifiers>
-      </type>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="f3d09d04-cd8c-4fac-bff3-a76c4be49e40">
-      <name>ПлановаяСтоимость</name>
-      <synonym>
-        <key>ru</key>
-        <value>Плановая стоимость</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>15</precision>
-          <scale>2</scale>
-        </numberQualifiers>
-      </type>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8f2e6915-dd85-46c1-a3c1-00adf7845571">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="9d27391b-20aa-4e76-b1da-29d19919a7da">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Document>

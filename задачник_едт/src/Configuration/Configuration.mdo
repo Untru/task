@@ -59,6 +59,7 @@
   <subsystems>Subsystem.Общая</subsystems>
   <subsystems>Subsystem.Сервис</subsystems>
   <subsystems>Subsystem.ТехПоддержка</subsystems>
+  <subsystems>Subsystem.Расчеты</subsystems>
   <styles>Style.Стиль1</styles>
   <commonPictures>CommonPicture.Администрирование48</commonPictures>
   <commonPictures>CommonPicture.АрхивАнкета</commonPictures>
@@ -319,7 +320,6 @@
   <commonModules>CommonModule.РаботаСБотомТелеграм</commonModules>
   <commonModules>CommonModule.ПланированиеЗадач</commonModules>
   <xDTOPackages>XDTOPackage.ОбщиеНастройки</xDTOPackages>
-  <httpServices>HTTPService.Order</httpServices>
   <eventSubscriptions>EventSubscription.ПриИзмененииОбращения</eventSubscriptions>
   <scheduledJobs>ScheduledJob.ЗагрузкаОбращенийПоEmail</scheduledJobs>
   <scheduledJobs>ScheduledJob.ОбработкаЗапросовТелеграм</scheduledJobs>
@@ -358,9 +358,13 @@
   <catalogs>Catalog.НастройкаРЛС</catalogs>
   <catalogs>Catalog.Проекты</catalogs>
   <catalogs>Catalog.узСпринты</catalogs>
+  <catalogs>Catalog.ЭтапПроекта</catalogs>
+  <catalogs>Catalog.СтатьяЗатрат</catalogs>
   <documents>Document.ОбращениеВПоддержку</documents>
   <documents>Document.РасчетыПоРаботам</documents>
   <documents>Document.Проект</documents>
+  <documents>Document.ДополнительныеЗатраты</documents>
+  <documents>Document.ЭтапПроекта</documents>
   <enums>Enum.ВариантыSMTPАутентификации</enums>
   <enums>Enum.ВидВажности</enums>
   <enums>Enum.ВидМестаРаботы</enums>
@@ -371,6 +375,7 @@
   <enums>Enum.СтатусыЗадачПодтвержденияТелеграм</enums>
   <enums>Enum.ТипПрименяемыхОбращений</enums>
   <enums>Enum.ЦветаСтрок</enums>
+  <enums>Enum.ВидыЗатрат</enums>
   <reports>Report.ОтчетПоОбращениям</reports>
   <reports>Report.Gant1C</reports>
   <reports>Report.ОтчетПоРаботе</reports>

@@ -569,6 +569,18 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="947dbe33-905a-42d0-9460-e1ed57d4c7ce">
+    <name>ЭтапПроекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап проекта</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЭтапПроекта</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="ce72344a-eeb8-4bdc-a867-c7ac69ddab65">
     <name>ФормаДокумента</name>
     <synonym>

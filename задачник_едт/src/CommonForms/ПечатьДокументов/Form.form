@@ -686,30 +686,6 @@
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <formCommands>
-    <name>ПоказатьСкрытьНастройкуКоличестваКопий</name>
-    <title>
-      <key>ru</key>
-      <value>Показать / Скрыть настройку комплекта</value>
-    </title>
-    <id>2</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Показать / Скрыть настройку количества копий</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <picture xsi:type="core:PictureRef">
-      <picture>CommonPicture.ИерархическийСписок</picture>
-    </picture>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ПоказатьСкрытьНастройкуКоличестваКопий</name>
-      </handler>
-    </action>
-    <currentRowUse>DontUse</currentRowUse>
-  </formCommands>
-  <formCommands>
     <name>ПереключитьРедактирование</name>
     <title>
       <key>ru</key>

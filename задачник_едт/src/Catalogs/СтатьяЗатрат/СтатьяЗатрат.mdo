@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e901087-b350-48b2-a9c5-6147397f7832">
+  <producedTypes>
+    <objectType typeId="54d2a00f-d18b-46b4-8f7b-13d983d70ceb" valueTypeId="b95bbdb7-a1f7-425a-90ad-6eafc189486d"/>
+    <refType typeId="91516e07-6c20-46c4-9ef8-a0d7c9ed5089" valueTypeId="24e7581c-a1d1-47c6-8b62-aa64d6d110d3"/>
+    <selectionType typeId="8829a349-82b3-42e1-a66f-341d16dccb43" valueTypeId="8504c785-e9ca-484f-bcb4-6ff6bc165f26"/>
+    <listType typeId="7fae3e8a-8dc9-4d69-af2d-a61c3f34c210" valueTypeId="2002a28f-d45d-4c67-bc5e-471c3b723ba7"/>
+    <managerType typeId="9018be45-7ec1-4858-8652-bb92bf0870c9" valueTypeId="49bb585d-fab5-42b1-a8f9-ee3ae944de13"/>
+  </producedTypes>
+  <name>СтатьяЗатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статья затрат</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СтатьяЗатрат.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.СтатьяЗатрат.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="a5a12497-d90f-422d-ac15-456063837910">
+    <name>ВидЗатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид затрат</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыЗатрат</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
