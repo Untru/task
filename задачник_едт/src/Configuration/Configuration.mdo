@@ -324,6 +324,7 @@
   <commonModules>CommonModule.ПроведениеСервер</commonModules>
   <commonModules>CommonModule.СебестоимостьСервер</commonModules>
   <commonModules>CommonModule.ВзаиморасчетыСКлиентамиСервер</commonModules>
+  <commonModules>CommonModule.ВзаиморасчетыСИсполнителямиСервер</commonModules>
   <xDTOPackages>XDTOPackage.ОбщиеНастройки</xDTOPackages>
   <eventSubscriptions>EventSubscription.ПриИзмененииОбращения</eventSubscriptions>
   <scheduledJobs>ScheduledJob.ЗагрузкаОбращенийПоEmail</scheduledJobs>
