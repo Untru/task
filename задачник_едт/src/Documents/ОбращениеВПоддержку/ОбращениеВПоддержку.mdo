@@ -34,6 +34,9 @@
   <realTimePosting>Deny</realTimePosting>
   <registerRecords>AccumulationRegister.ЗадолженостьКлиентов</registerRecords>
   <registerRecords>AccumulationRegister.РасчетСИсполнителями</registerRecords>
+  <registerRecords>AccumulationRegister.ВзаиморасчетыСПартнерами</registerRecords>
+  <registerRecords>AccumulationRegister.ВзаиморасчетыСИсполнителями</registerRecords>
+  <registerRecords>AccumulationRegister.Себестоимость</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="8f03b594-c64d-4157-bb18-0fbe0d99ffbd">
@@ -578,6 +581,7 @@
     <type>
       <types>DocumentRef.ЭтапПроекта</types>
     </type>
+    <fillFromFillingValue>true</fillFromFillingValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>

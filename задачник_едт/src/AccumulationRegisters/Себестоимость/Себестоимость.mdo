@@ -48,10 +48,10 @@
     <fullTextSearch>Use</fullTextSearch>
   </resources>
   <resources uuid="379de8c8-d832-48df-be15-31ef7fdb9b2a">
-    <name>ДополнительныеРасходы</name>
+    <name>ДополнительныеЗатраты</name>
     <synonym>
       <key>ru</key>
-      <value>Доп. расходы</value>
+      <value>Доп. затраты</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -62,18 +62,6 @@
     </type>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
-  <dimensions uuid="8d94e916-a708-4af2-b673-c0b3f73b47b7">
-    <name>Проект</name>
-    <synonym>
-      <key>ru</key>
-      <value>Проект</value>
-    </synonym>
-    <type>
-      <types>DocumentRef.Проект</types>
-    </type>
-    <fullTextSearch>Use</fullTextSearch>
-    <useInTotals>true</useInTotals>
-  </dimensions>
   <dimensions uuid="d13f0640-614f-4058-b25b-404cae6439ad">
     <name>Этап</name>
     <synonym>

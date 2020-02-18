@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb4679cd-4897-4899-918f-82bc630cb1e7">
+  <producedTypes>
+    <selectionType typeId="7bbc7857-50e4-4209-a693-93068618e451" valueTypeId="facee814-a06a-4143-a542-3a578c30e5e6"/>
+    <listType typeId="1435a69f-6cda-4293-8041-b98f8bade687" valueTypeId="b6f64a4b-f3c8-4931-a093-1bff15864eb1"/>
+    <managerType typeId="328d9e70-b913-4138-b548-5ca97747ca08" valueTypeId="d7441be1-e555-404d-a254-2c300749c11e"/>
+    <recordSetType typeId="723b1410-4f0f-4336-a4ab-3f9dcdd53f7a" valueTypeId="ced3c86c-03f9-4f47-a2af-576458b3d1b0"/>
+    <recordKeyType typeId="d12fa2bb-2845-4fad-bf9e-ecf7bedfe965" valueTypeId="7a8edc84-fdea-406e-be2e-dab96a99ee69"/>
+    <recordType typeId="034c89f0-8d43-4132-91fc-b42cd0c477aa" valueTypeId="1843f860-3549-432a-841e-d5d614332c6a"/>
+  </producedTypes>
+  <name>ВзаиморасчетыСИсполнителями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаиморасчеты с исполнителями</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="fd389c67-8397-42dd-b354-642bd4780a07">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="ac1e2603-3954-4eb6-a4bc-e0853812006b">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="aa3b5da3-febd-47fa-b457-7c5f7087a8a3">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ОбращениеВПоддержку</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

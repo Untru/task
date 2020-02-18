@@ -23,21 +23,11 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ДополнительныеЗатраты.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>AccumulationRegister.Себестоимость</registerRecords>
+  <registerRecords>AccumulationRegister.ВзаиморасчетыСПартнерами</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
-  <attributes uuid="1e3835d6-b226-4e2c-897f-54ed75624d8e">
-    <name>Контрагент</name>
-    <synonym>
-      <key>ru</key>
-      <value>Контрагент</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Контрагенты</types>
-    </type>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="6b382b15-55a7-4edd-bd7e-896b2d36ec95">
     <name>Комментарий</name>
     <synonym>
@@ -76,9 +66,20 @@
     <type>
       <types>DocumentRef.ЭтапПроекта</types>
     </type>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="fa0b6d36-ca82-415a-89ff-0311a26725df">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="3e1618b7-638e-4600-9e04-b9d954e04890">
     <producedTypes>
       <objectType typeId="b6dcf5a0-13f0-43dc-9e0c-4f3a4be09e5b" valueTypeId="462f018f-e7e1-4e79-8de0-4af1f805733e"/>

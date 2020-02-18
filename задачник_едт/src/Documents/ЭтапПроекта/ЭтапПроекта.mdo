@@ -29,6 +29,8 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ЭтапПроекта.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>AccumulationRegister.Себестоимость</registerRecords>
+  <registerRecords>AccumulationRegister.ВзаиморасчетыСКлиентами</registerRecords>
+  <registerRecords>AccumulationRegister.ВзаиморасчетыСПартнерами</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="57458cbc-d6ca-4c8a-962e-31f4c28879e6">

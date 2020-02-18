@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff0a39ad-d441-4aac-b5f2-97267a6fb898">
+  <producedTypes>
+    <selectionType typeId="7a971b42-6cfd-4a13-819d-eefa8d5d500f" valueTypeId="a0946764-46c4-489c-bd2a-c21f11979d4d"/>
+    <listType typeId="f1ac13ce-94b8-4424-b45c-8035a603504f" valueTypeId="8974dd97-0955-408b-856e-a7f9a3a475de"/>
+    <managerType typeId="8b312d1b-c54f-4ae0-8bc8-d32b4b4cfbab" valueTypeId="12afca35-d22d-4d1c-ab40-7c0bce63c180"/>
+    <recordSetType typeId="8c4253ae-bdfc-4b74-8bb3-068cff30e014" valueTypeId="ce7de220-c6fb-4cac-b3fd-2455cc4659cd"/>
+    <recordKeyType typeId="e742d72f-f9b6-4183-9091-62de4a61d2e5" valueTypeId="35702ac5-db8a-4c5d-bd00-d85099ad4bfc"/>
+    <recordType typeId="6aa5a7e4-5155-47d1-a8e1-7f5b92a00cf1" valueTypeId="224d2606-da00-473a-9953-cc99710fc18f"/>
+  </producedTypes>
+  <name>ВзаиморасчетыСКлиентами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаиморасчеты с клиентами</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="f58ba175-c2f4-473e-9ea6-dff76d6e0bc0">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="e5a4dfe0-a87b-4bbb-9d34-0647496215eb">
+    <name>СуммаКОплате</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма к оплате</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="1be288a1-83df-43ad-aece-be8a268ee5b3">
+    <name>СуммаОплаченная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма оплаченная</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="6e7cd28f-c07a-4ce3-8fe3-b11649b70385">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6b2c3af4-6f50-42db-b77a-ef650b0ce1e7">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЭтапПроекта</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -9,4 +9,7 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Enum.ВидыЗатрат</content>
   <content>Catalog.СтатьиЗатрат</content>
+  <content>AccumulationRegister.ВзаиморасчетыСИсполнителями</content>
+  <content>AccumulationRegister.ВзаиморасчетыСПартнерами</content>
+  <content>AccumulationRegister.ВзаиморасчетыСКлиентами</content>
 </mdclass:Subsystem>

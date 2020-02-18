@@ -323,6 +323,7 @@
   <commonModules>CommonModule.ПланированиеЗадач</commonModules>
   <commonModules>CommonModule.ПроведениеСервер</commonModules>
   <commonModules>CommonModule.СебестоимостьСервер</commonModules>
+  <commonModules>CommonModule.ВзаиморасчетыСКлиентамиСервер</commonModules>
   <xDTOPackages>XDTOPackage.ОбщиеНастройки</xDTOPackages>
   <eventSubscriptions>EventSubscription.ПриИзмененииОбращения</eventSubscriptions>
   <scheduledJobs>ScheduledJob.ЗагрузкаОбращенийПоEmail</scheduledJobs>
@@ -404,4 +405,7 @@
   <accumulationRegisters>AccumulationRegister.РасчетСИсполнителями</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ЗадолженостьКлиентов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Себестоимость</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ВзаиморасчетыСКлиентами</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ВзаиморасчетыСПартнерами</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ВзаиморасчетыСИсполнителями</accumulationRegisters>
 </mdclass:Configuration>

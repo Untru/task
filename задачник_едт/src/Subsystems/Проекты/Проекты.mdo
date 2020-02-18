@@ -9,4 +9,5 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Document.Проект</content>
   <content>Document.ЭтапПроекта</content>
+  <content>Document.ДополнительныеЗатраты</content>
 </mdclass:Subsystem>

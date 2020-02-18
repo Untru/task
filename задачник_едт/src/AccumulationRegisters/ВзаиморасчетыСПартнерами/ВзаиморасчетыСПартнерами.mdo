@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3302bd0a-b629-49cc-b6ed-5ccbaf6348f1">
+  <producedTypes>
+    <selectionType typeId="20a41b13-c5b3-4cc3-beca-00c8905dc59d" valueTypeId="260f6e36-a575-458f-a39d-d9fa2a95ad9f"/>
+    <listType typeId="206aa9d7-73bd-4d36-98cc-d70b6ae1cbb4" valueTypeId="a95b32d4-654a-44bd-b5da-5f8232b72f05"/>
+    <managerType typeId="bb0175a5-e827-4487-99f2-b2d92b622a13" valueTypeId="5ce55403-03d1-4119-9ad1-87428e001014"/>
+    <recordSetType typeId="57f70d09-657d-42dd-bbc4-e863f51bff4d" valueTypeId="f0abf129-1c93-4e84-bb19-88508c77ff26"/>
+    <recordKeyType typeId="03e4081b-8ff4-465a-9998-4c10df84ac12" valueTypeId="32bf1717-a5a6-4e31-be4b-51a9e4eb71cc"/>
+    <recordType typeId="7e591f8b-19d1-4420-a798-3db734d3fadc" valueTypeId="f077dcc3-3176-4585-a1d4-6c7477074bad"/>
+  </producedTypes>
+  <name>ВзаиморасчетыСПартнерами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаиморасчеты с партнерами</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="5ebd92d6-6d73-44f1-8f00-0bd7425fb890">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="be238b07-4062-4a9a-b9fd-e3e5625da12e">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЭтапПроекта</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
