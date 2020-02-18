@@ -23,6 +23,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.Себестоимость</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="1e3835d6-b226-4e2c-897f-54ed75624d8e">
@@ -110,7 +111,7 @@
         <value>Статья затрат</value>
       </synonym>
       <type>
-        <types>CatalogRef.СтатьяЗатрат</types>
+        <types>CatalogRef.СтатьиЗатрат</types>
       </type>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>

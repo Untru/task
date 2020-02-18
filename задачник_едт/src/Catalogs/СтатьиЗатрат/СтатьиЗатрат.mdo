@@ -7,18 +7,26 @@
     <listType typeId="7fae3e8a-8dc9-4d69-af2d-a61c3f34c210" valueTypeId="2002a28f-d45d-4c67-bc5e-471c3b723ba7"/>
     <managerType typeId="9018be45-7ec1-4858-8652-bb92bf0870c9" valueTypeId="49bb585d-fab5-42b1-a8f9-ee3ae944de13"/>
   </producedTypes>
-  <name>СтатьяЗатрат</name>
+  <name>СтатьиЗатрат</name>
   <synonym>
     <key>ru</key>
-    <value>Статья затрат</value>
+    <value>Статьи затрат</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Catalog.СтатьяЗатрат.StandardAttribute.Code</inputByString>
-  <inputByString>Catalog.СтатьяЗатрат.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СтатьиЗатрат.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.СтатьиЗатрат.StandardAttribute.Description</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Статья затрат</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Статьи затрат</value>
+  </listPresentation>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <codeLength>9</codeLength>

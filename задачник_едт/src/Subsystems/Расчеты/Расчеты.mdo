@@ -8,5 +8,5 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Enum.ВидыЗатрат</content>
-  <content>Catalog.СтатьяЗатрат</content>
+  <content>Catalog.СтатьиЗатрат</content>
 </mdclass:Subsystem>

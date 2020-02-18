@@ -45,6 +45,7 @@
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>UseWithWarnings</modalityUseMode>
+  <synchronousExtensionAndAddInCallUseMode>UseWithWarnings</synchronousExtensionAndAddInCallUseMode>
   <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
   <compatibilityMode>8.3.12</compatibilityMode>
   <languages uuid="b2d880d5-5edc-4a28-ab16-d0bd435d09b3">
@@ -60,6 +61,7 @@
   <subsystems>Subsystem.Сервис</subsystems>
   <subsystems>Subsystem.ТехПоддержка</subsystems>
   <subsystems>Subsystem.Расчеты</subsystems>
+  <subsystems>Subsystem.Проекты</subsystems>
   <styles>Style.Стиль1</styles>
   <commonPictures>CommonPicture.Администрирование48</commonPictures>
   <commonPictures>CommonPicture.АрхивАнкета</commonPictures>
@@ -319,6 +321,8 @@
   <commonModules>CommonModule.ОбщегоНазначенияПереопределяемый</commonModules>
   <commonModules>CommonModule.РаботаСБотомТелеграм</commonModules>
   <commonModules>CommonModule.ПланированиеЗадач</commonModules>
+  <commonModules>CommonModule.ПроведениеСервер</commonModules>
+  <commonModules>CommonModule.СебестоимостьСервер</commonModules>
   <xDTOPackages>XDTOPackage.ОбщиеНастройки</xDTOPackages>
   <eventSubscriptions>EventSubscription.ПриИзмененииОбращения</eventSubscriptions>
   <scheduledJobs>ScheduledJob.ЗагрузкаОбращенийПоEmail</scheduledJobs>
@@ -358,8 +362,7 @@
   <catalogs>Catalog.НастройкаРЛС</catalogs>
   <catalogs>Catalog.Проекты</catalogs>
   <catalogs>Catalog.узСпринты</catalogs>
-  <catalogs>Catalog.ЭтапПроекта</catalogs>
-  <catalogs>Catalog.СтатьяЗатрат</catalogs>
+  <catalogs>Catalog.СтатьиЗатрат</catalogs>
   <documents>Document.ОбращениеВПоддержку</documents>
   <documents>Document.РасчетыПоРаботам</documents>
   <documents>Document.Проект</documents>
@@ -400,4 +403,5 @@
   <informationRegisters>InformationRegister.ФактОплаты</informationRegisters>
   <accumulationRegisters>AccumulationRegister.РасчетСИсполнителями</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ЗадолженостьКлиентов</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.Себестоимость</accumulationRegisters>
 </mdclass:Configuration>

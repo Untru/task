@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa2d33d5-d375-4397-9f1c-ed58ffc65d26">
+  <producedTypes>
+    <selectionType typeId="1eadcd8a-e605-4ce0-8549-621db0b226aa" valueTypeId="4b8b3879-1ea8-47a5-a397-7141ea4b7de5"/>
+    <listType typeId="e9c6a237-f271-401d-a0f8-dc47fdcaf753" valueTypeId="f566fea0-4e63-4b24-ac46-99d7ef11b1e4"/>
+    <managerType typeId="b22b1ba9-f102-4f18-a782-dbc86b9bf27b" valueTypeId="fb179d2e-2f80-47e7-8144-984507711d10"/>
+    <recordSetType typeId="071a9e7e-d6e6-4813-8533-6ffcdbb0c348" valueTypeId="0f647dbc-950d-4868-b365-c80e673e2a82"/>
+    <recordKeyType typeId="98e89840-fce4-4144-a690-f82172bfecda" valueTypeId="255fc9e0-9a47-41ab-a781-264e534bb1c3"/>
+    <recordType typeId="63c0e510-667d-45c0-8be1-d3816fa96d2f" valueTypeId="e322488a-71d2-49bf-b278-7686e94f7723"/>
+  </producedTypes>
+  <name>Себестоимость</name>
+  <synonym>
+    <key>ru</key>
+    <value>Себестоимость</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="42b2d54c-b0c6-4961-a9ad-ea0e558736ab">
+    <name>ПлановаяСтоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плановая стоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="f4ff74de-9162-4fce-a0b5-0a4e99683bbf">
+    <name>Себестоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Себестоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="379de8c8-d832-48df-be15-31ef7fdb9b2a">
+    <name>ДополнительныеРасходы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доп. расходы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="8d94e916-a708-4af2-b673-c0b3f73b47b7">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Проект</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d13f0640-614f-4058-b25b-404cae6439ad">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЭтапПроекта</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8541dd77-b702-4465-be99-099eacf6571c">
+    <name>СтатьяЗатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья затрат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиЗатрат</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="bc206b27-3870-407b-8838-da4274808166">
+    <name>ВидЗатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид затрат</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыЗатрат</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:AccumulationRegister>
