@@ -30,6 +30,34 @@
     </type>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
+  <resources uuid="34582267-76a5-4daa-8988-84420c74eed7">
+    <name>СуммаКОплате</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма к оплате</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="646204ff-3794-404c-9d6a-a4d3a15cbf65">
+    <name>СуммаОплаченная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма оплаченная</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
   <dimensions uuid="be238b07-4062-4a9a-b9fd-e3e5625da12e">
     <name>Этап</name>
     <synonym>

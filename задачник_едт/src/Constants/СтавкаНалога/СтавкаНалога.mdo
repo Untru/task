@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="55f90e27-0ce1-4e81-8ebb-82118c953367">
+  <producedTypes>
+    <managerType typeId="c0abc770-0f8e-45f9-8071-c0b893a1fdb6" valueTypeId="67268e58-a48c-41bf-9dc1-51901227a957"/>
+    <valueManagerType typeId="386a6925-1094-4f75-b80f-6fe347cd57c7" valueTypeId="234992a9-8650-4a3b-9667-37575254d588"/>
+    <valueKeyType typeId="29d723f9-81fd-4893-a8dd-f98ade27476c" valueTypeId="84a2903f-4a4e-40fc-b403-aea2afbb0db8"/>
+  </producedTypes>
+  <name>СтавкаНалога</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ставка налога</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>4</precision>
+      <scale>1</scale>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

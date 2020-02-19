@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="63ad3b26-8b57-407e-982c-8f3d9e6f2b99">
+  <name>ВзаиморасчетыСПартнерамиСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаиморасчеты с партнерами сервер</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+</mdclass:CommonModule>

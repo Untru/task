@@ -325,6 +325,7 @@
   <commonModules>CommonModule.СебестоимостьСервер</commonModules>
   <commonModules>CommonModule.ВзаиморасчетыСКлиентамиСервер</commonModules>
   <commonModules>CommonModule.ВзаиморасчетыСИсполнителямиСервер</commonModules>
+  <commonModules>CommonModule.ВзаиморасчетыСПартнерамиСервер</commonModules>
   <xDTOPackages>XDTOPackage.ОбщиеНастройки</xDTOPackages>
   <eventSubscriptions>EventSubscription.ПриИзмененииОбращения</eventSubscriptions>
   <scheduledJobs>ScheduledJob.ЗагрузкаОбращенийПоEmail</scheduledJobs>
@@ -345,6 +346,7 @@
   <constants>Constant.ЧасНачалаРабочегоДня</constants>
   <constants>Constant.ЧасОкончанияРабочегоДня</constants>
   <constants>Constant.ОтправкаОбращенийУчетнаяЗаписьПочты</constants>
+  <constants>Constant.СтавкаНалога</constants>
   <commonForms>CommonForm.ОбщиеНастройки</commonForms>
   <commonForms>CommonForm.ФормаДобавленияСтатуса</commonForms>
   <commonForms>CommonForm.ФормаДобавленияСообщения</commonForms>
@@ -370,6 +372,8 @@
   <documents>Document.Проект</documents>
   <documents>Document.ДополнительныеЗатраты</documents>
   <documents>Document.ЭтапПроекта</documents>
+  <documents>Document.ПоступлениеДенег</documents>
+  <documents>Document.ВыплатаДенег</documents>
   <enums>Enum.ВариантыSMTPАутентификации</enums>
   <enums>Enum.ВидВажности</enums>
   <enums>Enum.ВидМестаРаботы</enums>
@@ -381,6 +385,7 @@
   <enums>Enum.ТипПрименяемыхОбращений</enums>
   <enums>Enum.ЦветаСтрок</enums>
   <enums>Enum.ВидыЗатрат</enums>
+  <enums>Enum.ВидыРасчета</enums>
   <reports>Report.ОтчетПоОбращениям</reports>
   <reports>Report.Gant1C</reports>
   <reports>Report.ОтчетПоРаботе</reports>

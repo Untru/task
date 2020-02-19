@@ -600,6 +600,106 @@
           <textEdit>true</textEdit>
         </extInfo>
       </items>
+      <items xsi:type="form:FormField">
+        <name>СписокЭтаповСуммаОтПартнера</name>
+        <id>239</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>СписокЭтапов.СуммаОтПартнера</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>ПолеРасширеннаяПодсказка19</name>
+          <id>241</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ПолеКонтекстноеМеню19</name>
+          <id>240</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>СписокЭтаповСуммаКОплатеОтПартнера</name>
+        <id>242</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>СписокЭтапов.СуммаКОплатеОтПартнера</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>ПолеРасширеннаяПодсказка21</name>
+          <id>244</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ПолеКонтекстноеМеню21</name>
+          <id>243</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
       <autoCommandBar>
         <name>КоманднаяПанель</name>
         <id>37</id>
@@ -2245,6 +2345,9 @@
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>СписокЭтапов.Ссылка</segments>
     </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокЭтапов.Завершен</segments>
+    </notDefaultUseAlwaysAttributes>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
 	ЭтапПроекта.Ссылка,
@@ -2258,11 +2361,16 @@
 	ЭтапПроекта.МоментВремени,
 	СебестоимостьОбороты.ПлановаяСтоимостьОборот,
 	СебестоимостьОбороты.СебестоимостьОборот,
-	СебестоимостьОбороты.ДополнительныеЗатратыОборот
+	СебестоимостьОбороты.ДополнительныеЗатратыОборот,
+	ЭтапПроекта.Завершен,
+	ВзаиморасчетыСПартнерамиОстатки.СуммаОстаток КАК СуммаОтПартнера,
+	ВзаиморасчетыСПартнерамиОстатки.СуммаКОплатеОстаток КАК СуммаКОплатеОтПартнера
 ИЗ
-	РегистрНакопления.Себестоимость.Обороты КАК СебестоимостьОбороты
-		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЭтапПроекта КАК ЭтапПроекта
-		ПО СебестоимостьОбороты.Этап = ЭтапПроекта.Ссылка
+	Документ.ЭтапПроекта КАК ЭтапПроекта
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ВзаиморасчетыСПартнерами.Остатки КАК ВзаиморасчетыСПартнерамиОстатки
+		ПО ЭтапПроекта.Ссылка = ВзаиморасчетыСПартнерамиОстатки.Этап
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.Себестоимость.Обороты КАК СебестоимостьОбороты
+		ПО ЭтапПроекта.Ссылка = СебестоимостьОбороты.Этап
 ГДЕ
 	ЭтапПроекта.Проведен</queryText>
       <mainTable>Document.ЭтапПроекта</mainTable>

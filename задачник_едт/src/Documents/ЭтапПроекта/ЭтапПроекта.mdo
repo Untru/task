@@ -78,6 +78,18 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="7b7c503a-c0b0-48c3-8b54-8b81b89010f3">
+    <name>Завершен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="d2acd659-d789-48fb-9c98-8dd195ab253c">
     <name>ФормаДокумента</name>
     <synonym>
