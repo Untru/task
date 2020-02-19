@@ -15,4 +15,5 @@
   <content>Constant.СтавкаНалога</content>
   <content>Enum.ВидыРасчета</content>
   <content>Document.ПоступлениеДенег</content>
+  <content>Document.ВыплатаДенег</content>
 </mdclass:Subsystem>

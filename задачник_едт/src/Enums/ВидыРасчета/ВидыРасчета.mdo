@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6668c164-f8cd-447c-9755-48a0c007b1e8">
+  <producedTypes>
+    <refType typeId="1300656a-2378-45bc-87f5-a4f5a6b0d856" valueTypeId="f09b07e5-2528-449b-bded-ba421df15483"/>
+    <listType typeId="c858b8e0-0d16-4e53-b1f6-6bf2318ef291" valueTypeId="1ad466ce-adae-45b3-876c-b23fbc3589c2"/>
+    <managerType typeId="5fd2f179-d55b-4f7f-819e-78ad5423442a" valueTypeId="0800402d-a7e1-4e4a-a076-a71f0ce9bdc2"/>
+  </producedTypes>
+  <name>ВидыРасчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды расчета</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="7d51655a-e297-4b3e-a6a2-f2191f3bf521">
+    <name>СИсполнителями</name>
+    <synonym>
+      <key>ru</key>
+      <value>С исполнителями</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="be0eff01-3c7d-4fdd-a5c4-58806e229ce6">
+    <name>СПартнером</name>
+    <synonym>
+      <key>ru</key>
+      <value>С партнером</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5cdfa414-460c-4de1-b77c-b4b97229d10b">
+    <name>СКлиентом</name>
+    <synonym>
+      <key>ru</key>
+      <value>С клиентом</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
