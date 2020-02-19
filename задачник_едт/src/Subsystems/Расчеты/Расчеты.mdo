@@ -16,4 +16,5 @@
   <content>Enum.ВидыРасчета</content>
   <content>Document.ПоступлениеДенег</content>
   <content>Document.ВыплатаДенег</content>
+  <content>Catalog.СпособПлатежа</content>
 </mdclass:Subsystem>

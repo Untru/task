@@ -367,6 +367,7 @@
   <catalogs>Catalog.Проекты</catalogs>
   <catalogs>Catalog.узСпринты</catalogs>
   <catalogs>Catalog.СтатьиЗатрат</catalogs>
+  <catalogs>Catalog.СпособПлатежа</catalogs>
   <documents>Document.ОбращениеВПоддержку</documents>
   <documents>Document.РасчетыПоРаботам</documents>
   <documents>Document.Проект</documents>

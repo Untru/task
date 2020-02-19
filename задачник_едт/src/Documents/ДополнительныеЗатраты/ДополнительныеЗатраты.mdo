@@ -25,7 +25,6 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ДополнительныеЗатраты.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>AccumulationRegister.Себестоимость</registerRecords>
-  <registerRecords>AccumulationRegister.ВзаиморасчетыСПартнерами</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="6b382b15-55a7-4edd-bd7e-896b2d36ec95">

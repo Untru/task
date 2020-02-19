@@ -18,11 +18,23 @@
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Поступление денег</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Поступления денег</value>
+  </listPresentation>
   <numberType>String</numberType>
   <numberLength>9</numberLength>
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПоступлениеДенег.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.ВзаиморасчетыСКлиентами</registerRecords>
+  <registerRecords>AccumulationRegister.ВзаиморасчетыСПартнерами</registerRecords>
+  <registerRecords>AccumulationRegister.ВзаиморасчетыСИсполнителями</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="8ccf5b16-8a9e-4bbe-b26c-7bcb7e138254">
@@ -37,4 +49,92 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="f90fae79-e2ed-4faf-80ba-4a5d497c9c6f">
+    <name>СпособПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ платежа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособПлатежа</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5a8c769d-bb44-4305-a1a9-614d4ef38469">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="28659d95-90cf-4faa-b9c8-3cc6f7f0d8b5">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="6c14ba54-7557-41d8-ae29-7a303329d220">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="c85013b8-ecbc-4e41-8464-b54cebc97133">
+    <producedTypes>
+      <objectType typeId="c77f0e02-fd35-4ace-ac4e-f4521e10c764" valueTypeId="472925bc-5572-4816-b97d-3165c6896cc0"/>
+      <rowType typeId="3b4dfd06-fdae-4fcd-ad1b-2f5a2dec4471" valueTypeId="ae81dc3d-6dc5-41a4-96aa-50459325c77b"/>
+    </producedTypes>
+    <name>РасшифровкаПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка платежа</value>
+    </synonym>
+    <attributes uuid="9ef801f1-672f-4a9b-9566-657143e9adcb">
+      <name>Этап</name>
+      <synonym>
+        <key>ru</key>
+        <value>Этап</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ЭтапПроекта</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9f471703-c8bb-41ae-ab90-a1097f6fb7eb">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
 </mdclass:Document>
