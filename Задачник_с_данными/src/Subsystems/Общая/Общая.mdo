@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff10d73e-e4e1-446a-a2e2-fc181a2040a4">
+  <name>Общая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общая</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Enum.ЦветаСтрок</content>
+  <content>DataProcessor.РабочийСтолОбращенийТП</content>
+  <content>Constant.ВремяУдаленияЗаписиОСтатусе</content>
+  <content>Constant.ВремяУдаленияЗаписиОСообщении</content>
+  <content>Enum.ВидОбращений</content>
+  <content>FunctionalOption.ПрименятьВажностьВОбращении</content>
+  <content>Constant.ПрименятьВажностьВОбращении</content>
+  <content>Constant.ВремяУдаленияЗаписиОбИсполнителе</content>
+  <content>Constant.ЗагрузкаОбращенийУчетнаяЗаписьПочты</content>
+  <content>Constant.ЗагружатьОбращенияПоEmail</content>
+  <content>InformationRegister.ПрисоединенныеФайлы</content>
+  <content>Constant.ВремяУдаленияЗаписиФайла</content>
+  <content>Enum.ВидМестаРаботы</content>
+  <content>InformationRegister.СотрудникиОтделов</content>
+  <content>Enum.ТипПрименяемыхОбращений</content>
+  <content>Enum.ВидВажности</content>
+  <content>InformationRegister.СтатусыОбращений</content>
+  <content>InformationRegister.КатегорииИсполнителиОбращений</content>
+  <content>Report.ОтчетПоОбращениям</content>
+  <content>Constant.ОтправкаОбращенийУчетнаяЗаписьПочты</content>
+  <content>Report.ОтчетПоРаботе</content>
+  <content>Catalog.узСпринты</content>
+  <content>DataProcessor.узКанбанДоска</content>
+</mdclass:Subsystem>

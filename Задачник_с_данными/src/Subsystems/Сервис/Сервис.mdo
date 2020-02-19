@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af07059b-cb8d-4fe2-a819-19a26d3e240b">
+  <name>Сервис</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сервис</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.СервисМенеджер</picture>
+  </picture>
+  <content>Catalog.Пользователи</content>
+  <content>CommonCommand.ОткрытьФормуОбщиеНастройки</content>
+  <content>Catalog.НастройкиПользователей</content>
+  <content>Catalog.УчетныеЗаписиЭлектроннойПочты</content>
+  <content>CommonCommand.ОткрытьСтартовыйПомощник</content>
+  <content>Catalog.НастройкаРЛС</content>
+  <content>DataProcessor.ПланировщикФакт</content>
+  <content>DataProcessor.ГрупповоеИзменениеОбъектов</content>
+  <content>DataProcessor.БотТелеграм</content>
+  <content>DataProcessor.СтартовыйПомощник</content>
+  <content>DataProcessor.Планировщик</content>
+  <content>Document.РасчетыПоРаботам</content>
+</mdclass:Subsystem>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="35b49756-9c03-444f-b475-5e96f6425f44">
+  <producedTypes>
+    <objectType typeId="cadf86aa-e4b2-4074-965e-931f5717590c" valueTypeId="d2f8f2ca-bebd-41d3-a3d7-0bb8be84d856"/>
+    <refType typeId="f19fee18-8b15-4d88-a16a-af558e009b87" valueTypeId="b3557cea-011e-4a24-ab68-16f35b8e6d2e"/>
+    <selectionType typeId="7db7f008-b8f5-4fae-81b5-68e2c4dba6d0" valueTypeId="bc8d2132-fbe2-496c-a1bc-64250be4687b"/>
+    <listType typeId="54fde87e-c743-4c2d-98f3-81f79cc5e3ee" valueTypeId="22eb6e31-6134-445e-903e-54df05f1d5b9"/>
+    <managerType typeId="1d40fb78-f436-4500-94bd-040cf5aad2fc" valueTypeId="83e3d9c9-9eff-4aec-af6c-e61c77dc1a2f"/>
+  </producedTypes>
+  <name>НастройкиПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки пользователей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.НастройкиПользователей.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.НастройкиПользователей.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Настройка пользователя</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="92a45e90-7a80-40b7-a9a3-09d6aa5863c5">
+      <name>СтандартныеНастройки</name>
+      <description>Стандартные настройки</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.НастройкиПользователей.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="cc88b0d5-ed26-4a5d-88b5-fb3cff80da7a">
+    <name>АвтоОткрытииРабочегоСтолаОбращений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автооткрытии рабочего стола обращений</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="de6f0e0c-136b-4917-ace6-c2aefe01a2c8">
+    <name>ТипПрименяемыхОбращений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип применяемых обращений</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипПрименяемыхОбращений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ТипПрименяемыхОбращений.EnumValue.ВнутренниеИВнешниеОбращения</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3b049d9c-f3fa-419f-98e3-2e752617335e">
+    <name>ОбращенияПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обращения по умолчанию</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидОбращений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВидОбращений.EnumValue.ВнутренниеОбращения</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2d6e5069-31c7-48a8-8a55-1c259601ffe2">
+    <name>ОтделПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отдел по умолчанию</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Отделы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1a8dc74c-1f0d-46c1-aba7-fe13aabb0e4f">
+    <name>КатегорияПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория по умолчанию</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Категории</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9527ef09-0b83-48d3-af54-7618dcec2528">
+    <name>УстанавливатьОтборПоИсполнителю</name>
+    <synonym>
+      <key>ru</key>
+      <value>Устанавливать отбор по исполнителю</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="25b51670-755e-4bdd-867a-15efb496ba80">
+    <name>СкраватьОбращенияВСтатусеВыполнено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скравать обращения в статусе выполнено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7082edfd-fe3d-435f-ad40-5d712fdea77d">
+    <name>УстанавливатьОтборПоАвтору</name>
+    <synonym>
+      <key>ru</key>
+      <value>Устанавливать отбор по автору</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a40c4af0-e385-415a-a041-fe0f75ca8ee7">
+    <name>ИсполнительПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель по умолчанию</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="81a33a8e-6825-4e1e-b214-f0c9ded11437">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

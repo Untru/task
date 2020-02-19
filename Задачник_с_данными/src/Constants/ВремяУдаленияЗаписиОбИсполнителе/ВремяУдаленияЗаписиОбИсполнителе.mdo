@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="28d4a21c-ae56-4b77-a2c5-81ef2f3bd0f9">
+  <producedTypes>
+    <managerType typeId="1f9a9dcc-222b-4bbd-b70a-9e25a958b875" valueTypeId="a5772edb-4d3b-47a6-b88b-701163a21e36"/>
+    <valueManagerType typeId="f2ca654b-3e98-425d-9ef1-6f9f3ee70fce" valueTypeId="9c37d6c9-cbe0-4f38-9f1b-c56e27eed244"/>
+    <valueKeyType typeId="26ac7a63-dce8-5a24-bdea-3a8dd6cc331b" valueTypeId="ed7783fd-40e8-51ff-a01c-16640763bbce"/>
+  </producedTypes>
+  <name>ВремяУдаленияЗаписиОбИсполнителе</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время удаления записи о категории и исполнителе (мин.)</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7276d194-d3d1-45b2-9714-e03d752d57f6">
+  <name>Справочно</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справочники</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ИнформацияСправочно</picture>
+  </picture>
+  <content>Catalog.Отделы</content>
+  <content>Catalog.Организации</content>
+  <content>Catalog.ФизическиеЛица</content>
+  <content>Catalog.Статусы</content>
+  <content>Catalog.Контрагенты</content>
+  <content>Catalog.Категории</content>
+  <content>InformationRegister.ЦветаОтделов</content>
+  <content>Catalog.Проекты</content>
+</mdclass:Subsystem>

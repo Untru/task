@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="235a7300-47ac-4c5e-b250-11b30b2490df">
+  <producedTypes>
+    <refType typeId="33e69cbc-9291-4f5d-9475-4adced68ca76" valueTypeId="ace15aff-bf7e-4457-a319-685d1dd81add"/>
+    <listType typeId="98b4c90b-fd89-4f09-89e8-7971bdf8ebaa" valueTypeId="4b2a318d-8bfb-483b-b743-a89380c28f97"/>
+    <managerType typeId="689724b4-68d9-4852-9c5e-559e5fef9e4a" valueTypeId="38ab5e15-31ce-409d-aa45-2947199f6d7f"/>
+  </producedTypes>
+  <name>СтатусыЗадачПодтвержденияТелеграм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы задач подтверждения телеграм</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="dd6ea697-eae8-446a-86ac-e827f4860112">
+    <name>ВОжидании</name>
+    <synonym>
+      <key>ru</key>
+      <value>В ожидании</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6c11a186-f5fe-4d48-a39b-96b4d597919b">
+    <name>Обрабатывается</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обрабатывается</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

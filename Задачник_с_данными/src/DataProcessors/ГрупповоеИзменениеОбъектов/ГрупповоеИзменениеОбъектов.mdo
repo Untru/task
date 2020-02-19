@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d48adb4e-07a7-4f34-8382-730d9b71a7fa">
+  <producedTypes>
+    <objectType typeId="184bd226-758a-40e6-8e9c-b22946691261" valueTypeId="a8639769-88fc-4a6e-a016-56079eaa9b6c"/>
+    <managerType typeId="f5aa838d-8756-4ef7-af6e-3cfbc8eb3e1b" valueTypeId="a826c3ed-e5b1-4e49-abf9-ab8acb0d90d7"/>
+  </producedTypes>
+  <name>ГрупповоеИзменениеОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Групповое изменение объектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ГрупповоеИзменениеОбъектов.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="b24bf1b1-3a41-4c8e-a1d2-2a03dfe0fc5e">
+    <name>ИзменятьВТранзакции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменять в транзакции</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1935b018-d422-4dab-952f-291a73e13e00">
+    <name>ПрерыватьПриОшибке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прерывать при ошибке</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ccaa0fe6-da15-4d05-acd6-2dd26d67d0f9">
+    <name>ИспользуютсяДопРеквизиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используются доп реквизиты</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="34e7323f-25c8-4fc5-a146-c60fb99009fd">
+    <name>ИспользуютсяДопСведения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используются доп сведения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="41c8b6d5-7a8d-47c3-b31b-41682c468a89">
+    <producedTypes>
+      <objectType typeId="2225b3c2-980a-4461-a60d-ad4aa6f5b6de" valueTypeId="d8a787f7-2a62-47be-a5fa-4585d85f072e"/>
+      <rowType typeId="1f0fb694-dba8-4f56-a453-a9a5d325cca3" valueTypeId="2947b242-37e4-4aad-aaba-fb97dde6931b"/>
+    </producedTypes>
+    <name>Операции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операции</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="b520e284-09d9-4427-b2b7-9fe2eb4f3537">
+      <name>ВидОперации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид операции</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e57dc801-fce1-4840-9998-04679c04dd45">
+      <name>ИмяРеквизита</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя реквизита (свойство)</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="032b551d-e9c9-443c-8677-2791f02fc66b">
+      <name>Свойство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свойство</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d7febb5a-5916-46a3-aa02-e2738ee1196f">
+      <name>Представление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Представление</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="a57264e1-6247-42ff-bd83-1964b6bb8f27">
+      <name>Изменять</name>
+      <synonym>
+        <key>ru</key>
+        <value>Изменять</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="7d54cb47-6b58-4b3c-b1a0-d4b80c183aed">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+        <types>String</types>
+        <types>Date</types>
+        <types>Number</types>
+        <types>AnyRef</types>
+        <numberQualifiers>
+          <precision>17</precision>
+          <scale>6</scale>
+        </numberQualifiers>
+        <stringQualifiers>
+          <length>1024</length>
+        </stringQualifiers>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="956747e1-b09b-447d-9370-41789b03a59e">
+      <name>ЗаблокированныйРеквизит</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заблокированный реквизит</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="faf5bdea-8ff3-4b5b-ac51-18a167067951">
+      <name>ДопустимыеТипы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Допустимые типы</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="72948520-7a92-4c75-83a0-c238413efa42">
+      <name>ПараметрыВыбора</name>
+      <synonym>
+        <key>ru</key>
+        <value>Параметры выбора</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8c1bd93f-12a8-4c10-86dc-3a6b824dfd5d">
+      <name>СвязиПараметровВыбора</name>
+      <synonym>
+        <key>ru</key>
+        <value>Связи параметров выбора</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d9d96db5-6263-4637-b976-7ef8de0d4ac9">
+      <name>ВыборГруппИЭлементов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выбор групп и элементов</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value>ГруппыИЭлементы</value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="2f7dda28-3085-4977-8051-4fb4167e05af">
+    <producedTypes>
+      <objectType typeId="b870577c-f9c5-4f66-91c9-328f0a9ca8aa" valueTypeId="5ea40787-3939-4661-9fb3-ce4024d0893c"/>
+      <rowType typeId="226b4d4d-66de-4b8a-a2b2-e120848da5d2" valueTypeId="e102ba40-a3f9-4a69-bc8a-7806183917ef"/>
+    </producedTypes>
+    <name>ОбъектыДляИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объекты для изменения</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="fe4369a9-5028-4744-97fe-9766e35892f6">
+      <name>Ссылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ссылка</value>
+      </synonym>
+      <type>
+        <types>AnyRef</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="640466c9-48c1-4fb8-8dc8-d25fc4567981">
+      <name>СоставДопРеквизитов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Состав доп реквизитов</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Каждая строка - ссылка на свойство</value>
+      </toolTip>
+      <multiLine>true</multiLine>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="18e55a3c-f61f-4b67-9b78-ae640ce21a36">
+      <name>СоставДопСведений</name>
+      <synonym>
+        <key>ru</key>
+        <value>Состав доп сведений</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Каждая строка - ссылка на свойство</value>
+      </toolTip>
+      <multiLine>true</multiLine>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="81900b7d-bbc4-4512-90a1-82d83069e1d2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="17a7cb6f-cbb8-4c07-bba3-0e456d5fcbcd">
+    <name>Настройка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="833b0b29-9d2c-4d8e-b767-48809031979b">
+    <name>ФильтрРеквизитов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фильтр реквизитов</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

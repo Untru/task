@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56ecfeb8-3867-4d20-a27f-190ce6b4e470">
+  <producedTypes>
+    <refType typeId="5e5e6b03-a110-4e2a-9975-9336ddda9587" valueTypeId="351457f0-c71e-408c-8e1c-3d7c0c581c6e"/>
+    <listType typeId="fa761e0a-f728-4561-bebb-320cbb44497c" valueTypeId="19806054-c4b5-466b-9ef6-9439b86c164b"/>
+    <managerType typeId="86743fd9-7ad4-4eab-8ee2-de043a644179" valueTypeId="570a1046-e077-4148-883e-a3cb6fd0a511"/>
+  </producedTypes>
+  <name>ВидМестаРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид места работы</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="de30559e-4b05-4475-8b39-84c013e6ce55">
+    <name>ОсновноеМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное место</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="06c49101-5470-4791-ad91-bd90876a328f">
+    <name>ВнутреннееСовмещение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внутреннее совмещение</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

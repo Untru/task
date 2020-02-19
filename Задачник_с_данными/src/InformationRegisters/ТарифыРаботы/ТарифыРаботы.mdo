@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dfc80417-b2e3-4fbd-865d-ebed53679226">
+  <producedTypes>
+    <selectionType typeId="8af5722d-22fe-4b66-b7e2-34409502803b" valueTypeId="f64c92c9-06a6-4454-aac7-adfa86a7cb2b"/>
+    <listType typeId="e49f09cf-b56c-47e3-ba92-2e84900d7499" valueTypeId="16fef42c-5dd9-43c0-b2f3-b59b9265cd78"/>
+    <managerType typeId="0f18c3cd-3315-4873-ab43-6f929c231f08" valueTypeId="ed644759-f476-4dbc-b644-c72b8f0d1b6e"/>
+    <recordSetType typeId="72c20238-8d69-4b0e-9743-1b81cc1e89b1" valueTypeId="70a52d3c-fb7f-4c72-b037-37a57603fa5c"/>
+    <recordKeyType typeId="ba29a555-5ccd-4f89-9bc0-532b705d1420" valueTypeId="55d773d3-323f-4312-8eb7-0b9533d74cd7"/>
+    <recordType typeId="37505c7e-b13e-40c9-8b7a-d7b353fe64b6" valueTypeId="cbf0bab7-2efd-4096-881d-49bb454c81d3"/>
+    <recordManagerType typeId="96696b3e-f6a8-4b9c-859b-803761e2d2f3" valueTypeId="cfdfd3da-fa30-42ad-8606-4b63ae5044b3"/>
+  </producedTypes>
+  <name>ТарифыРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тарифы работы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="65a200b4-ea68-436a-8fa4-479efb28e5f5">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4657397f-b229-43da-adb8-01abe420372c">
+    <name>ФизЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физ лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f1ff4a0e-04a0-4803-aa6d-8a856dd1ac8a">
+    <name>ВидВажности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид важности</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидВажности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

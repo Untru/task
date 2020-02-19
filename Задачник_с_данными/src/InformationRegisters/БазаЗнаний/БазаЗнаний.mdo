@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c076adb7-3f92-4af5-a6c9-33257df92313">
+  <producedTypes>
+    <selectionType typeId="cc3cc456-a7da-4188-a0ed-5bc5f19c655d" valueTypeId="4e380166-b431-4d04-bb86-ee2b297aa8cb"/>
+    <listType typeId="5a337306-062f-438c-b10b-bfec02873b21" valueTypeId="515137bc-b067-4dc6-94e0-639d4c7b4d1f"/>
+    <managerType typeId="a38fb3a6-c7f8-4dce-8580-dd7498cb9c04" valueTypeId="e91e606c-56ab-4fef-a223-bd980ab122df"/>
+    <recordSetType typeId="5b51dbe4-5765-432a-886b-4efa574f23b1" valueTypeId="8f9f67c3-e9ec-4bba-a891-cafbc13f18f0"/>
+    <recordKeyType typeId="60bbde16-3b21-424d-9461-df9e881c8eda" valueTypeId="080a4306-1d90-431d-87b5-c27e869778a7"/>
+    <recordType typeId="fcb0a275-d8cb-4ee5-bd8a-4cdb2b5dceb8" valueTypeId="8a3d4d3c-5389-4ad2-95f5-04c0652f46d8"/>
+    <recordManagerType typeId="050bce79-79f5-43fe-a497-e5b71e64fcd2" valueTypeId="66536349-c7bc-4528-8eac-415c639547ab"/>
+  </producedTypes>
+  <name>БазаЗнаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>База знаний</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="078308f1-03d2-4bfe-895f-e6254a2e7d88">
+    <name>Сообщение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+</mdclass:InformationRegister>

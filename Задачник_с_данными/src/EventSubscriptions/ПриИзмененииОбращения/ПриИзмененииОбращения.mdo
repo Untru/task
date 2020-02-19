@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="603165c4-1c73-4bb7-bd19-f4765b07b28f">
+  <name>ПриИзмененииОбращения</name>
+  <synonym>
+    <key>ru</key>
+    <value>При изменении обращения</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ОбращениеВПоддержку</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.РаботаСБотомТелеграм.ПриЗаписиДокумента</handler>
+</mdclass:EventSubscription>

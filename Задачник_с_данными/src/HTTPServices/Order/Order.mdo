@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bb1804f8-8ac1-4ff4-b5c6-3d4694812ff5">
+  <name>Order</name>
+  <synonym>
+    <key>ru</key>
+    <value>Order</value>
+  </synonym>
+  <rootURL>Order</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="f37b2c5f-ea3d-4462-a1d2-9fab0e83a29b">
+    <name>ШаблонURL1</name>
+    <template>/*</template>
+    <methods uuid="ce4280b8-9d95-43f3-874e-2b2c093863fd">
+      <name>getOrder</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get order</value>
+      </synonym>
+      <handler>URL1getOrder</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

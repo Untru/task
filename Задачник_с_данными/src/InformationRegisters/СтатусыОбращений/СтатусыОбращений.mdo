@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3aebf60-5c39-416f-991a-bd8c3227ad5c">
+  <producedTypes>
+    <selectionType typeId="72e0c079-fdcd-482f-9bad-b966b69f9bb0" valueTypeId="d5064746-2672-423b-a5c8-686698becd30"/>
+    <listType typeId="1774f972-2d5e-4ce4-bde3-48c56fdba63d" valueTypeId="b99539c6-736a-4cd7-a4d2-59c487de84ae"/>
+    <managerType typeId="22bc51c2-6caf-4857-9ae7-4ac94ae53d7e" valueTypeId="ccc173d9-25f0-4f64-b878-27f8986d8d1d"/>
+    <recordSetType typeId="8605fff6-e62b-4d24-a530-08fc67633afe" valueTypeId="7bd9fe92-ce7a-4eb5-b341-5de128711b72"/>
+    <recordKeyType typeId="936e07ea-f777-4890-b5d2-e682304d0adf" valueTypeId="a695c45b-4375-4720-b6b2-578083df2d54"/>
+    <recordType typeId="b4f864b6-94d3-4e8e-b2e6-e159e4be8377" valueTypeId="81667985-3a78-4241-9e99-0c42f5b314dd"/>
+    <recordManagerType typeId="86ffee44-621d-45e9-8fb1-0f8d3daf00c5" valueTypeId="184928c5-c28c-451e-afdb-47a0498985fc"/>
+  </producedTypes>
+  <name>СтатусыОбращений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы обращений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d5d4e96f-56f0-4ae5-93dd-0a6938ce1d8d">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Статусы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="75f83059-092a-4cfc-b717-2c3ddbde2b31">
+    <name>ОбращениеОт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обращение от</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Отделы</types>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="61e84475-8f45-400b-b10c-2430ca7283cf">
+    <name>Заголовок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заголовок</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>80</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="d35067d1-7b17-4ce4-a103-1ea769a60561">
+    <name>Обращение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обращение</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ОбращениеВПоддержку</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

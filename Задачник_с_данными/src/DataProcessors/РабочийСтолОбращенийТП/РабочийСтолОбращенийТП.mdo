@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="085db12a-c383-45f8-b89d-a71b1e559b06">
+  <producedTypes>
+    <objectType typeId="f367d2ad-9c8f-49e3-9dcd-01a8680c861e" valueTypeId="f3b72c4a-999f-437d-b3cc-acaea187fdbc"/>
+    <managerType typeId="d4ac04d0-d42c-4673-a401-2083b5d2a122" valueTypeId="fd8e760b-b2e4-449c-ad31-afae27f4b48d"/>
+  </producedTypes>
+  <name>РабочийСтолОбращенийТП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обращения в поддержку</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РабочийСтолОбращенийТП.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="9de33efe-962a-48fb-a02a-76f55a89e4a5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8d90464c-9741-4aed-8212-2485cc395df0">
+    <name>Обращение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обращение</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

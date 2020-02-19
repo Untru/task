@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c598fa0e-e2e8-48b1-91ac-0b7c09b2e0a3">
+  <producedTypes>
+    <refType typeId="0d609444-ce28-415f-b0bf-16b7761e056d" valueTypeId="bf90b412-04e0-4207-a861-cec7d5c43733"/>
+    <listType typeId="0b472de7-1b28-475e-8616-a2c7d572c870" valueTypeId="dd90e65c-a7a2-41bb-8c51-f95a9483484e"/>
+    <managerType typeId="5e509762-5eae-46fd-96ca-2ccec1b28a60" valueTypeId="76586a57-94d8-4a2a-80b1-2944e12d40c8"/>
+  </producedTypes>
+  <name>ВариантыSMTPАутентификации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты SMTP аутентификации</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="822fe6c8-a0e6-4762-96ef-228a5b7030cc">
+    <name>АналогичноPOP3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналогично POP3</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9692ad81-9b70-4551-ab70-fe0b0f799784">
+    <name>ЗадаетсяПараметрами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задается параметрами</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3a13665b-05d9-4200-a0c5-b8cfa65b1b49">
+    <name>POP3ПередSMTP</name>
+    <synonym>
+      <key>ru</key>
+      <value>POP3 перед SMTP</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3d409441-a6a9-4cb9-8cc8-07243ab2f9f7">
+    <name>НеЗадано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не задано</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

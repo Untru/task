@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c4c7d976-c81b-4873-80ba-b0185e21589c">
+  <producedTypes>
+    <selectionType typeId="c2e2a65a-25e3-4f8e-a21b-d579beb50439" valueTypeId="ccf7c045-0087-4f37-9da7-059e387275cf"/>
+    <listType typeId="34d72b53-6d36-4241-86f1-25f6cceceb1d" valueTypeId="78ff5949-e88f-419a-8560-a7ae7b0c6913"/>
+    <managerType typeId="0f3c96c4-7e0b-4e4a-bf18-1199184642e0" valueTypeId="1a2a38b4-d80b-4335-b537-c915d087f88a"/>
+    <recordSetType typeId="ac4de4ab-9439-4c80-ac86-d9ff0286b91a" valueTypeId="1e14d02d-4937-418e-aac9-9ab9e6c60583"/>
+    <recordKeyType typeId="6ec35af8-ef34-4bf9-8a14-c23a46a85f14" valueTypeId="1737af5d-146f-4a63-af06-74de4289906b"/>
+    <recordType typeId="506bd9f0-dc2b-415b-ae86-ad6adbf6b13f" valueTypeId="3634c2b6-9427-4109-b043-2eb49bf1d114"/>
+    <recordManagerType typeId="e55d830e-c770-4265-b3a9-69653790f8c3" valueTypeId="8a06f52d-ec38-4366-ade6-c94b0b8f8283"/>
+  </producedTypes>
+  <name>СотрудникиОтделов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сотрудники отделов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СотрудникиОтделов.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4923fc99-274d-43bc-b556-4ec4dc689446">
+    <name>ВидМестаРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид места работы</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидМестаРаботы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0870a932-a568-402c-b7af-f9558d8dcb5a">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="21255a3e-16ed-40f6-98f2-c075b50e4ada">
+    <name>Отдел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отдел</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Отделы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f785aa38-676d-4445-aef4-a6814fbcc301">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="a5c04f05-c450-4bb7-8ef5-5d434987175a">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

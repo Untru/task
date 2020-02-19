@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ee8da78-a43b-48df-85f0-2fdc4f629c12">
+  <producedTypes>
+    <managerType typeId="2041577a-c4b8-4a50-b2c7-c080ae56c99a" valueTypeId="3d72bfc6-1aa2-4c2d-aaa7-77607348148a"/>
+    <valueManagerType typeId="0f8b3bc7-c9d4-486b-a607-48e9e966816f" valueTypeId="a2f7d2e0-7383-45d3-af30-2b7c8753dcd8"/>
+    <valueKeyType typeId="2a6ee643-f044-54e1-bb7c-38d4a57893e1" valueTypeId="4e72db9f-271c-56b4-8980-f144ef4def61"/>
+  </producedTypes>
+  <name>ПрименятьВажностьВОбращении</name>
+  <synonym>
+    <key>ru</key>
+    <value>Применять важность в обращении</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

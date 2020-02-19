@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="66eb7b9b-db1a-405a-b1f8-b5a10f446540">
+  <producedTypes>
+    <refType typeId="1cc127a3-7a0e-4e2d-bafe-12cff1384e26" valueTypeId="bd733e03-6f15-47ab-b37f-148b4308b9e8"/>
+    <listType typeId="14e708b1-1ad2-44aa-bea4-a90cb5f533ca" valueTypeId="c1c36d97-3714-4cfc-92b6-25643f3473fd"/>
+    <managerType typeId="2e975479-744a-45f7-bdc3-2edbb9ea979a" valueTypeId="8997cc97-4467-4ae5-bb6c-abc59fc55233"/>
+  </producedTypes>
+  <name>ВидОбращений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид обращений</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="35c38b23-4f65-4920-ae4b-e2cb2f407d0b">
+    <name>ВнутренниеОбращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внутренние обращения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9a9fa6c1-5855-4692-9b51-1b4cf082e224">
+    <name>ВнешниеОбращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешние обращения</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

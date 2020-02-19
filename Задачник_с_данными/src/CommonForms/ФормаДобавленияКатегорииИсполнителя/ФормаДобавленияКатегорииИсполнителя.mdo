@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="25f791e8-11a8-4df2-9312-ff14f63efd4a">
+  <name>ФормаДобавленияКатегорииИсполнителя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение категории/исполнителя</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

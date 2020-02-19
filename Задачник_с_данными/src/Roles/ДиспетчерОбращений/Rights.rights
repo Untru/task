@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rights xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://v8.1c.ru/8.2/roles" xsi:type="Rights">
+	<setForNewObjects>false</setForNewObjects>
+	<setForAttributesByDefault>true</setForAttributesByDefault>
+	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
+	<object>
+		<name>DataProcessor.РабочийСтолОбращенийТП</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>SessionParameter.ТекущийПользователь</name>
+		<right>
+			<name>Get</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Set</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ЗагружатьОбращенияПоEmail</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ОбращениеВПоддержку</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>ОбращениеВПоддержку ИЗ Документ.ОбращениеВПоддержку КАК ОбращениеВПоддержку, (ВЫБРАТЬ
+	МАКСИМУМ(НастройкаРЛС.ОграниченияПоОтделам) КАК ОграниченияПоОтделам
+ИЗ
+	Справочник.НастройкаРЛС КАК НастройкаРЛС
+ГДЕ
+	НастройкаРЛС.Пользователь = &amp;ТекущийПользователь) КАК ВложенныйЗапрос
+ГДЕ ВЫБОР
+			КОГДА ВложенныйЗапрос.ОграниченияПоОтделам
+				ТОГДА ОбращениеВПоддержку.ОбращениеОт В
+						(ВЫБРАТЬ
+							НастройкаРЛСОтделы.Отдел
+						ИЗ
+							Справочник.НастройкаРЛС.Отделы КАК НастройкаРЛСОтделы
+						ГДЕ
+							НастройкаРЛСОтделы.Ссылка.Пользователь = &amp;ТекущийПользователь
+						СГРУППИРОВАТЬ ПО
+							НастройкаРЛСОтделы.Отдел)
+			ИНАЧЕ 1 = 1
+		КОНЕЦ</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ФормаДобавленияКатегорииИсполнителя</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ВремяУдаленияЗаписиОбИсполнителе</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ЗадолженостьКлиентов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Configuration.ServiceDesk</name>
+		<right>
+			<name>ThinClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>WebClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ThickClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ExternalConnection</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SaveUserData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Output</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.НастройкиПользователей</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.Attribute.ИНН</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Отделы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>Отделы ИЗ (ВЫБРАТЬ
+	НастройкаРЛС.ОграниченияПоОтделам КАК ОграниченияПоОтделам,
+	НастройкаРЛС.Пользователь КАК Пользователь
+ИЗ
+	Справочник.НастройкаРЛС КАК НастройкаРЛС
+ГДЕ
+	НастройкаРЛС.Пользователь = &amp;ТекущийПользователь) КАК ВложенныйЗапрос, Справочник.Отделы КАК Отделы
+ГДЕ ВЫБОР
+			КОГДА ВложенныйЗапрос.ОграниченияПоОтделам
+				ТОГДА Отделы.Ссылка В
+						(ВЫБРАТЬ
+							ОграниченияПоОтделам.отдел
+						ИЗ
+							Справочник.НастройкаРЛС.отделы КАК ОграниченияПоОтделам
+							 ГДЕ
+    			ОграниченияПоОтделам.Ссылка.Пользователь = &amp;ТекущийПользователь
+
+						СГРУППИРОВАТЬ ПО
+												ОграниченияПоОтделам.отдел)
+			ИНАЧЕ 1 = 1
+		КОНЕЦ</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Отделы.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Отделы.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Отделы.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Отделы.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Отделы.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Отделы.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Отделы.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Отделы.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Отделы.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.Attribute.ПолноеНаименование</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Контрагенты</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ЗагрузкаОбращенийУчетнаяЗаписьПочты</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMarkPredefinedData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.ТехПоддержка</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ПрисоединенныеФайлы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>TotalsControl</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.Attribute.КПП</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.УчетныеЗаписиЭлектроннойПочты</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ФормаДобавленияСтатуса</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ВремяУдаленияЗаписиОСообщении</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ПрименятьВажностьВОбращении</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ВремяУдаленияЗаписиОСтатусе</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Категории</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ФормаДобавленияСообщения</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ФизическиеЛица</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>ФизическиеЛица ИЗ Справочник.ФизическиеЛица КАК ФизическиеЛица, (ВЫБРАТЬ
+	НастройкаРЛС.Пользователь КАК Пользователь,
+	МАКСИМУМ(ЕСТЬNULL(НастройкаРЛС.ОграниченияПоОтделам, ЛОЖЬ)) КАК ОграниченияПоОтделам,
+	МАКСИМУМ(ЕСТЬNULL(НастройкаРЛС.ОграниченияПросмотраСотрудников, ЛОЖЬ)) КАК ОграниченияПросмотраСотрудников
+ИЗ
+	Справочник.НастройкаРЛС КАК НастройкаРЛС
+ГДЕ
+	НастройкаРЛС.Пользователь = &amp;ТекущийПользователь
+
+СГРУППИРОВАТЬ ПО
+	НастройкаРЛС.Пользователь) КАК Настройки
+ГДЕ ВЫБОР
+			КОГДА Настройки.ОграниченияПросмотраСотрудников
+				ТОГДА ФизическиеЛица.Ссылка В
+							(ВЫБРАТЬ РАЗЛИЧНЫЕ
+								НастройкаРЛССотрудники.Сотрудник КАК Сотрудник
+							ИЗ
+								Справочник.НастройкаРЛС.Сотрудники КАК НастройкаРЛССотрудники
+							ГДЕ
+								НастройкаРЛССотрудники.Ссылка.Пользователь = &amp;ТекущийПользователь)
+						ИЛИ ФизическиеЛица.Ссылка В
+							(ВЫБРАТЬ РАЗЛИЧНЫЕ
+								Сотрудники.Сотрудник
+							ИЗ
+								(ВЫБРАТЬ РАЗЛИЧНЫЕ
+									ЕСТЬNULL(НастройкаРЛССотрудники.Сотрудник.Родитель, ЗНАЧЕНИЕ(Справочник.ФизическиеЛица.ПустаяСсылка)) КАК Сотрудник
+								ИЗ
+									Справочник.НастройкаРЛС.Сотрудники КАК НастройкаРЛССотрудники
+								ГДЕ
+									НастройкаРЛССотрудники.Ссылка.Пользователь = &amp;ТекущийПользователь
+		
+								ОБЪЕДИНИТЬ ВСЕ
+		
+								ВЫБРАТЬ РАЗЛИЧНЫЕ
+									ЕСТЬNULL(НастройкаРЛССотрудники.Сотрудник.Родитель.Родитель, ЗНАЧЕНИЕ(Справочник.ФизическиеЛица.ПустаяСсылка))
+								ИЗ
+									Справочник.НастройкаРЛС.Сотрудники КАК НастройкаРЛССотрудники
+								ГДЕ
+									НастройкаРЛССотрудники.Ссылка.Пользователь = &amp;ТекущийПользователь
+		
+								ОБЪЕДИНИТЬ ВСЕ
+		
+								ВЫБРАТЬ РАЗЛИЧНЫЕ
+									ЕСТЬNULL(НастройкаРЛССотрудники.Сотрудник.Родитель.Родитель.Родитель, ЗНАЧЕНИЕ(Справочник.ФизическиеЛица.ПустаяСсылка))
+								ИЗ
+									Справочник.НастройкаРЛС.Сотрудники КАК НастройкаРЛССотрудники
+								ГДЕ
+									НастройкаРЛССотрудники.Ссылка.Пользователь = &amp;ТекущийПользователь
+		
+								ОБЪЕДИНИТЬ ВСЕ
+		
+								ВЫБРАТЬ РАЗЛИЧНЫЕ
+									ЕСТЬNULL(НастройкаРЛССотрудники.Сотрудник.Родитель.Родитель.Родитель.Родитель, ЗНАЧЕНИЕ(Справочник.ФизическиеЛица.ПустаяСсылка))
+								ИЗ
+									Справочник.НастройкаРЛС.Сотрудники КАК НастройкаРЛССотрудники
+								ГДЕ
+									НастройкаРЛССотрудники.Ссылка.Пользователь = &amp;ТекущийПользователь) КАК Сотрудники
+							ГДЕ
+								Сотрудники.Сотрудник &lt;&gt; ЗНАЧЕНИЕ(Справочник.ФизическиеЛица.ПустаяСсылка))
+						ИЛИ НЕ ФизическиеЛица.Родитель = ЗНАЧЕНИЕ(Справочник.ФизическиеЛица.ПустаяСсылка)
+							И ФизическиеЛица.Родитель В
+								(ВЫБРАТЬ РАЗЛИЧНЫЕ
+									НастройкаРЛССотрудники.Сотрудник КАК Сотрудник
+								ИЗ
+									Справочник.НастройкаРЛС.Сотрудники КАК НастройкаРЛССотрудники
+								ГДЕ
+									НастройкаРЛССотрудники.Ссылка.Пользователь = &amp;ТекущийПользователь)
+						ИЛИ НЕ ФизическиеЛица.Родитель.Родитель = ЗНАЧЕНИЕ(Справочник.ФизическиеЛица.ПустаяСсылка)
+							И ФизическиеЛица.Родитель.Родитель В
+								(ВЫБРАТЬ РАЗЛИЧНЫЕ
+									НастройкаРЛССотрудники.Сотрудник КАК Сотрудник
+								ИЗ
+									Справочник.НастройкаРЛС.Сотрудники КАК НастройкаРЛССотрудники
+								ГДЕ
+									НастройкаРЛССотрудники.Ссылка.Пользователь = &amp;ТекущийПользователь)
+						ИЛИ НЕ ФизическиеЛица.Родитель.Родитель.Родитель = ЗНАЧЕНИЕ(Справочник.ФизическиеЛица.ПустаяСсылка)
+							И ФизическиеЛица.Родитель.Родитель.Родитель В
+								(ВЫБРАТЬ РАЗЛИЧНЫЕ
+									НастройкаРЛССотрудники.Сотрудник КАК Сотрудник
+								ИЗ
+									Справочник.НастройкаРЛС.Сотрудники КАК НастройкаРЛССотрудники
+								ГДЕ
+									НастройкаРЛССотрудники.Ссылка.Пользователь = &amp;ТекущийПользователь)
+						ИЛИ НЕ ФизическиеЛица.Родитель.Родитель.Родитель.Родитель = ЗНАЧЕНИЕ(Справочник.ФизическиеЛица.ПустаяСсылка)
+							И ФизическиеЛица.Родитель.Родитель.Родитель.Родитель В
+								(ВЫБРАТЬ РАЗЛИЧНЫЕ
+									НастройкаРЛССотрудники.Сотрудник КАК Сотрудник
+								ИЗ
+									Справочник.НастройкаРЛС.Сотрудники КАК НастройкаРЛССотрудники
+								ГДЕ
+									НастройкаРЛССотрудники.Ссылка.Пользователь = &amp;ТекущийПользователь)
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ВремяУдаленияЗаписиФайла</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Статусы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.БазаЗнаний</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>TotalsControl</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.СтатусыОбращений</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>TotalsControl</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.Планировщик</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.СотрудникиОтделов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.ОткрытьРабочийСтолОбращенийТП</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.РасчетСИсполнителями</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ТарифыОтделов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ТарифыРаботы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ОтчетПоОбращениям</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЦветаОтделов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>ЦветаОтделов ИЗ РегистрСведений.ЦветаОтделов КАК ЦветаОтделов, (ВЫБРАТЬ
+	МАКСИМУМ(НастройкаРЛС.ОграниченияПоОтделам) КАК ОграниченияПоОтделам
+ИЗ
+	Справочник.НастройкаРЛС КАК НастройкаРЛС
+ГДЕ
+	НастройкаРЛС.Пользователь = &amp;ТекущийПользователь) КАК ВложенныйЗапрос
+ГДЕ ВЫБОР
+			КОГДА ВложенныйЗапрос.ОграниченияПоОтделам
+				ТОГДА ЦветаОтделов.Отдел В
+						(ВЫБРАТЬ
+							НастройкаРЛСОтделы.Отдел
+						ИЗ
+							Справочник.НастройкаРЛС.Отделы КАК НастройкаРЛСОтделы
+							 ГДЕ
+    			НастройкаРЛСОтделы.Ссылка.Пользователь = &amp;ТекущийПользователь
+
+						СГРУППИРОВАТЬ ПО
+							НастройкаРЛСОтделы.Отдел)
+			ИНАЧЕ 1 = 1
+		КОНЕЦ</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ФормаВопроса</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.Общая</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+</Rights>
